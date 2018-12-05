@@ -157,3 +157,23 @@ footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
+.buttonnav{
+  text-align:center;
+    padding-top:60px;
+}
+
+a:hover {
+    color: #50465E;
+    font-weight:600;
+    text-decoration:none;
+}
+.previous{
+  padding-right:20px;
+    color:grey;
+}
+.next{
+  padding-left:20px;
+    color:grey;
+}
+
