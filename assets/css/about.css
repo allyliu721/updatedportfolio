@@ -6,10 +6,17 @@ body {
   overflow:hidden;
 }
 
+
 a {
+  color: #3a94f7;
+  font-weight:400;
+  border: none;
+}
 
-  border: none !important;
-
+a:hover, a:focus, a:active {
+  color: #3a94f7;
+  font-weight:600;
+  text-decoration:none;
 }
 
 #content{
