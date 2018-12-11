@@ -496,11 +496,13 @@ a:hover, a:focus, a:active {
 
 .myName{
   font-size:45px;
-  padding-bottom:5px;
+  padding-bottom:8px;
+  color:#6eaff7;
+
 }
 
 .myName:hover{
-  color:#6eaff7;
+  color:#5f87ea;
 }
 
 
