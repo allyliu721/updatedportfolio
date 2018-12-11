@@ -12,6 +12,10 @@ body {
 
 }
 
+p{
+  padding-bottom:8px;
+}
+
 pre {
   font-family:'Source Sans Pro';
     margin-block-start: 1em;
@@ -139,8 +143,9 @@ a {
 
 .column{
   float:left;
-  width:32%;
-  margin-right:18%;
+  width:30%;
+  margin-right:10%;
+  margin-left:10%;
   margin-bottom:5%;
   height:auto;
 }
@@ -178,4 +183,8 @@ a:hover {
 }
 
 
+.blurdemo:after{
+  display:table;
+  clear:both;
+}
 
