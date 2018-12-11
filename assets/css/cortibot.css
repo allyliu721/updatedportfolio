@@ -160,8 +160,9 @@ a {
 
 .column{
   float:left;
-  width:32%;
-  margin-right:18%;
+  width:30%;
+  margin-right:10%;
+  margin-left:10%;
   margin-bottom:5%;
   height:auto;
 }
@@ -240,3 +241,7 @@ a:hover {
   color:grey;
 }
 
+.cortidemo:after{
+  display:table;
+  clear:both;
+}
