@@ -10,11 +10,6 @@ p{
   padding-bottom:8px;
 }
 
-body {
-  font-family: 'Source Sans Pro';
-  height:100vh;
-
-}
 
 pre {
   font-family:'Source Sans Pro';
@@ -244,4 +239,10 @@ a:hover {
 .cortidemo:after{
   display:table;
   clear:both;
+}
+
+body {
+  font-family: 'Source Sans Pro'!important; 
+  height:100vh;
+
 }
