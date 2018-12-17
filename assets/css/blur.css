@@ -182,6 +182,11 @@ a:hover {
   color:grey;
 }
 
+.next{
+  padding-right:20px;
+  color:grey;
+}
+
 
 .blurdemo:after{
   display:table;
