@@ -69,7 +69,13 @@
       <div class="container text-center">
         <div class="row">
           <div style="display:none;" id="introduction" class="col-lg-10 mx-auto animate-bottom">
-            <h1>Hi! This is <span class = "myName hvr-underline-from-center" >Ally Liu</span> </h1>
+          <!--   <div id="typed-strings">
+              <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+              <p>It can type anything you want</p>
+            </div>
+            <span id = "typed"></span> -->
+          <h1 class = "type"></h1>
+          <!--   <h1>Hi! This is <span class = "myName hvr-underline-from-center" >Ally Liu</span> </h1> -->
             <p class="lead mb-5">I am a passionate Interaction Designer studying Master of Human Computer Interaction
               <a class = "linkstyle" href = "https://hcii.cmu.edu/academics/mhci" target = "_blank">MHCI</a> at 
               <a class = "linkstyle" href = "https://www.cmu.edu/" target = "_blank">Carnegie Mellon University</a>. Previously designed at 
@@ -215,6 +221,18 @@
     <script src="../assets/js/aos.js"></script>
     <script type = "text/javascript">
       AOS.init(); </script>
+
+    <script type = "text/javascript" src="../assets/js/typed.js"></script>
+    <script ty[e = "text/javascript">
+      var typed = new Typed(".type", {
+      strings: ["Hello There!",
+      "My name is Ally Liu",
+      ],
+      typeSpeed:100,
+      backSpeed:40,
+      });
+    </script>
+
 
 
   </body>

@@ -545,3 +545,6 @@ a:hover, a:focus, a:active {
   background-color:#fff !important;
 }
 
+.type{
+  display:inline;
+}
