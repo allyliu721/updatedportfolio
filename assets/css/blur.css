@@ -9,6 +9,8 @@ html {
 body {
   font-family: 'Source Sans Pro' !important;
   height:100vh;
+  font-size:18px;
+  color: #545556;
 
 }
 
@@ -23,7 +25,8 @@ pre {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     line-height: 1.5;
-    font-size:16px;
+    font-size:18px;
+    color: #545556;
 }
 ul {
   padding: 0;
