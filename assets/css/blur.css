@@ -196,3 +196,7 @@ a:hover {
   clear:both;
 }
 
+img {
+  background: url('../assets/img/brandeiscover.gif') no-repeat;
+}
+
