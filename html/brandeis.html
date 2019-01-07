@@ -78,9 +78,9 @@
         DARPA x BBN x Invincea x CMU
      </div>
 
-        <br><p> With the prevalence of sensor-based smart phone apps, mobile data privacy is getting more and more complex. Every moment in every day, our mobile device collects our data, and it is for sale. How can we make sure our data on smartphone devices is protected and not used by third-party companies? </p>
+        <br><p> With the prevalence of sensor-based smart phone apps, mobile data privacy is getting more and more complex. Every moment in every day, our mobile device collects our data, and it is for sale. <span class = "inlinetext">How can we make sure our data on smartphone devices is protected and not used by third-party companies?</span> </p>
 
-         <p>The goal of the Brandeis project is to make vastly easier for developers and end-users to make privacy in the context of sensor-based smartphone apps.</p>
+         <p> Our goal is to help users become more sensitive in their data and lead them to configure a personalized private setting based on their choice. We ask the app end-developers to list out and break down their privacy data request (such as location, camera, and contact list). Users will be able to see "what data type is being accessed", who is accessing their data", and "why is the data being accessed". While we categorize data by "Typical" vs "Atypical" base on the specific app category and give user default recommended setting, users will have the freedom to configure privacy setting based on their preference, such as blocking all third-party advertisers.</p>
 
           <pre><b>Fall 2018 Group Project</b> - Work In Progress
             In Collaboration with Siqi Wu, Asit Parida (Engineering), and Mike Czapik (Engineering)
@@ -97,10 +97,14 @@
           <p>With the prevalence of sensor-based smart phone apps, mobile data privacy is getting more and more complex.
           We live in a society which we are overwhelmed by privacy alerts and news every day. How do we protect our privacy data so it is used for our specific usage purpose only?</p>
 
-          <p>The Brandeis Project is a collaboration between CMU, <a href = "https://en.wikipedia.org/wiki/DARPA" target = "_blank">DARPA</a>, <a href = "https://en.wikipedia.org/wiki/BBN_Technologies" target = "_blank">BBN</a>, and <a href = "https://www.invincea.com/" target = "_blank">Invincea</a>, with the aim to achieve an order of magnitude improvements for mobile privacy. Our goal is to help users become more sensitive in their data and lead them to configure a personalized private setting based on their choice. </p>
+          <p>The Brandeis Project is a collaboration between CMU, <a href = "https://en.wikipedia.org/wiki/DARPA" target = "_blank">DARPA</a>, <a href = "https://en.wikipedia.org/wiki/BBN_Technologies" target = "_blank">BBN</a>, and <a href = "https://www.invincea.com/" target = "_blank">Invincea</a>, with the aim to achieve an order of magnitude improvements for mobile privacy. Our goal is to recreate Privacy Manager and make privacy vastly transparent and easier for developers and end-users in the context of sensor-based smartphone apps. </p>
 
 
           <p>As the Designer on the team (advised by <a href = "https://hcii.cmu.edu/people/jason-hong" target = "_blank">Professor Jason Hong</a>), my role is to reimagine the UX and UI for privacy settings in a privacy - enhanced Android OS.</p>
+
+
+
+          <br><br><br>
 
 
 
@@ -163,6 +167,11 @@
               <p> User is able to go to Privacy Home and see all current setting for a specific privaccy category. User can configure all current settings for this category using "All Permissions" feature. </p>
             </div>
           </div>
+
+
+          <div class = "pageheader" data-aos="fade-up" data-aos-duration="600">
+          Design Process
+        </div>
        
 
 
@@ -173,33 +182,29 @@
 
             <p>If apps had clearer purposes (inferred or declared by devices), then we could create better predictive models of privacy concerns, which can scale to millions of apps and users. What we propose to Android is to ask the app developers to break down privacy requests, help users to recognize typical versus atypical data reqeusts, and give them recommended privacy suggestons. </p> 
           </div>
-        
 
 
 
            <div class = "start" id = "start" data-aos="fade-up" data-aos-duration="600">
-             <div class = "secheader" >Getting Started</div>
+             <div class = "secheader" >Understanding the Problem</div>
 
             <p>In current Android OS, apps tell you what permissions they are using (e.g. location, camera), but they don't tell you:
             <li>Why they are using these permission (e.g. for advertising) </li>
             <li>Who they are sending their data to (e.g. to third-party libraries like AdMob) </li>
             In this project, we are building a future in which users can know all those information.
   ​           </p>
-            
-          
 
 
-          <div class = "brandeisdemo">
-              <img src = "../assets/../assets/img/oldhome.png" class = "column" ></img>
-              <img src = "../assets/../assets/img/homescreen.gif" class = "column"></img>
+            <img src = "../assets/img/privacygoal.png" style = "width:130%; margin-left:-15%"alt ="Brandeis" >
 
-          </div>
-
-
+   
           
               <p><span class = "inlinetext"> Our Project shows user what the permissions are used for and who are the data being sent to</span></p>
 
                <p>This is the new data model that DARPA and CMU will be proposing to Android: all Android developers need to specify the purpose of each privacy data use; on top of that, we can now parse out what third-party libraries are using what privacy data.
+
+
+
 ​
                 Engineers have done the ground work. But now, here come the design challenge:
 ​
@@ -208,12 +213,13 @@
               <li>How can we help users configure privacy so their personal data is protected?</li>
           ​
 ​               </p>
-              
-              <img src = "../assets/img/brandeisflow.png" style = "width:140%; margin-left:-20%"alt ="Brandeis" >
-
 
 
               <p> The most importantly, we need to think about <span class = "inlinebold">how will users interacti with Privacy Manager</span> and what are our chances to help users interact with privacy manager in an unobtrusive way.</p>
+
+
+              <img src = "../assets/img/designprocess.png" style = "width:130%; margin-left:-15%"alt ="Brandeis" >
+              
 
            
 
@@ -221,12 +227,14 @@
 
               </p>
 
+                 <img src = "../assets/img/brandeisflow.png" style = "width:150%; margin-left:-25%"alt ="Brandeis" >
+
            
 
               <p> My initial prototype focused on detailing privacy settings for different purposes and defining what data is being accessed , why the data has been requested, and who is trying to access the data. 
               </p>
               
-              <img src = "../assets/../assets/img/brandeismed.png" style = "width:130%; margin-left:-15%;"></img>
+  
             </div>
 
             
@@ -237,6 +245,8 @@
 
                <p>For user testing, I tried to recruit people outside of my network to receive more critical and unbiased feedback. </p>
                <p> To begin, I organized my digital prototypes into Invision to create a mobile mockup. I recruited one person from CMU library, one from Starbucks coffee shop, and two people walking on the street. I received a variety of comments during Think Aloud process, but I was able to find repetitive patterns from those information. One common feedback I received from testings was <span class = "inlinebold">Wow. That's a lot of information!"</span></p>
+
+               <img src = "../assets/../assets/img/privacyuserquotes.png" style = "width:130%; margin-left:-15%;"></img>
           
                <span class = "inlinebold">Users don't understand why they need to configure and what they can configure without interfering basic functionalities of the app</span>
               <p> Users don't know what is the "best" configuration setting for them. They don't know how to configure. Some of the terms don't relate to them right away. They need more explanations to help them to understand. </p>
@@ -249,6 +259,8 @@
 
         <div class = "iteration" id = "iteration" data-aos="fade-up" data-aos-duration="600">
           <div class = "secheader" >Iterate from Feedback</div>
+
+           <img src = "../assets/../assets/img/brandeismed.png" style = "width:130%; margin-left:-15%;"></img>
 
          
 
@@ -284,6 +296,13 @@
               <p> From Install Interface to Privacy Policy Home Page </p>
             
               <p> After users interact with Privacy Manager in the Install UI, We also want to allow users to come to Privacy Manager Home Screen to gain more knowledge about their privacy standing. They will have access for more detailed configurations at Privacy Manager Home Page.</p>
+
+
+            <div class = "brandeisdemo">
+              <img src = "../assets/../assets/img/oldhome.png" class = "column" ></img>
+              <img src = "../assets/../assets/img/homescreen.gif" class = "column"></img>
+
+            </div>
 
               <p> We examined the previous design for Privacy Poliy Home Page, and found the following problems that we could fix through Heuristic Evaluation:
                 <li>Privacy Yearly Report is not a common feature that users access. The top section is usually utilized to position the most important feature or information.</li>
@@ -355,7 +374,17 @@
             
             <p> We also thought that it would be helpful for users to have quick access to turn ALL the permissions for a specific category "On" or "Off". We did two iterations on the "Quick Settings" menu. The first one is to have "Quick Settings" collapse under the top navigation notification section. The second one will be closer to Android design which includes Quick Setting in one of the quick menus. We will do A/B Testing and Think Aloud Testing on these two iterations. </p>
 
-             <p> Our project is still work in progress. I am always happy to chat more about my updates! :)</p>
+            <p> Our project is still work in progress. I am always happy to chat more about my updates! :)</p>
+
+            <br><br>
+
+            <img src = "../assets/img/brandeiscover.png" style = "width:130%; margin-left:-15%"></img>
+        
+
+
+           
+
+             
 
         </div>
 
