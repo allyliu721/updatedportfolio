@@ -180,7 +180,7 @@
           <div class = "opportunity" id = "opportunity" data-aos="fade-up" data-aos-duration="600">
             <div class = "secheader">Opportunity Space</div>
 
-            <p>If apps had clearer purposes (inferred or declared by devices), then we could create better predictive models of privacy concerns, which can scale to millions of apps and users. What we propose to Android is to ask the app developers to break down privacy requests, help users to recognize typical versus atypical data reqeusts, and give them recommended privacy suggestons. </p> 
+            <p>If apps had clearer purposes (inferred or declared by devices), then we could create better predictive models of privacy concerns, which can scale to millions of apps and users. What we propose to Android is to ask the app developers to break down privacy requests, help users to recognize typical versus atypical data requests, and give them recommended privacy suggestions. </p> 
           </div>
 
 
@@ -194,73 +194,87 @@
             In this project, we are building a future in which users can know all those information.
   ​           </p>
 
+            <p>Since we are redesigning the whole interaction of users with their privacy-sensitive data and the Privacy Manager, we have broken down the project into five parts: the Privacy Manager Home Pages, Install Interface, Configuration Interface, Run Time Interface, and Quick Setting Interface.</p> 
 
-            <img src = "../assets/img/privacygoal.png" style = "width:130%; margin-left:-15%"alt ="Brandeis" >
+           <img src = "../assets/img/privacygoal.png" style = "width:130%; margin-left:-15%"alt ="Brandeis" >
 
-   
+
+ 
           
-              <p><span class = "inlinetext"> Our Project shows user what the permissions are used for and who are the data being sent to</span></p>
+              <p><span class = "inlinetext"> Our Project shows user what the permissions are used for and who are the data being sent to.</span></p>
+             
+              <p><b>We want to make all the privacy data permissions transparent, help users configure the best privacy setting base on their preference, and at the same time, make the interaction as simple as possible under data complexity.</b> The detailed goals for each of the five sections are listed above. </p>
 
-               <p>This is the new data model that DARPA and CMU will be proposing to Android: all Android developers need to specify the purpose of each privacy data use; on top of that, we can now parse out what third-party libraries are using what privacy data.
-
-
-
-​
-                Engineers have done the ground work. But now, here come the design challenge:
-​
-              <li>How can we engage new users to configure privacy setting when they install apps? </li>
-              <li>How can we make sure privacy settings are easy to understand and manage?</li>
-              <li>How can we help users configure privacy so their personal data is protected?</li>
-          ​
-​               </p>
-
-
-              <p> The most importantly, we need to think about <span class = "inlinebold">how will users interacti with Privacy Manager</span> and what are our chances to help users interact with privacy manager in an unobtrusive way.</p>
+               <p>My design process for Privacy Manager breaks down into seven steps: Heuristic Evaluation, User Research, User Interview/Card Sorting, Sketching & Wireframing, Medium Fidelity Design, and Usability Testing. After several rounds of iterations, I finalize on the design and make it high fidelity. </p>
 
 
               <img src = "../assets/img/designprocess.png" style = "width:130%; margin-left:-15%"alt ="Brandeis" >
+
+         
+
+              <p>I start from understanding the problem to Heuristic Evaluation on the current design. Then I dive into User Research where I could understand what users need and their pain points. After User Research, I conduct User Interview with potential users in different demographic groups to further get into users heads, so the  products could better serve users’ needs. </p>
               
-
-           
-
-              <p> I approached the challenge by designing the Install Time user interface (when users download an app). After discussion with my team, we thought the install interface will verly likely to be the first interface users interact with Privacy Manager to configure their privacy settings. A critical problem with current Install Interface is that the install configuration is almost a binary process for users. <span class = "inlinebold">Users have to either agree with its all privacy settings, or they cannot download the app</span>. With these problems in mind, I quickly moved into paper and low-fidelity design for Install UI solutions. 
-
-              </p>
-
-                 <img src = "../assets/img/brandeisflow.png" style = "width:150%; margin-left:-25%"alt ="Brandeis" >
-
-           
-
-              <p> My initial prototype focused on detailing privacy settings for different purposes and defining what data is being accessed , why the data has been requested, and who is trying to access the data. 
-              </p>
-              
+          
   
             </div>
 
             
           <div class = "learning" id = "learning" data-aos="fade-up" data-aos-duration="600">
-             <div class = "secheader" >Learning from Users</div>
+             <div class = "secheader" >Learning from Users </div>
+
+
+              <P>After user research, we divide our target users into three groups: the young millennials, the working professionals, the olders, and some privacy highly-sensitive groups such as the military.</P>
+
+               <img src = "../assets/../assets/img/privacyusers.png" style = "width:110%; margin-left:-5%;"></img>
           
 
 
-               <p>For user testing, I tried to recruit people outside of my network to receive more critical and unbiased feedback. </p>
-               <p> To begin, I organized my digital prototypes into Invision to create a mobile mockup. I recruited one person from CMU library, one from Starbucks coffee shop, and two people walking on the street. I received a variety of comments during Think Aloud process, but I was able to find repetitive patterns from those information. One common feedback I received from testings was <span class = "inlinebold">Wow. That's a lot of information!"</span></p>
+               <p>We found interesting <b>contradictions</b> that worth notice among users after the interview. While most of the users indicate that they rarely configure their privacy settings, they are also sensitive about their data. In fact, more than half of them don’t know that their information is used or sold to third-party advertisers. <b>Most importantly, they feel they don’t have control over their privacy.</b> </p>
 
                <img src = "../assets/../assets/img/privacyuserquotes.png" style = "width:130%; margin-left:-15%;"></img>
-          
-               <span class = "inlinebold">Users don't understand why they need to configure and what they can configure without interfering basic functionalities of the app</span>
-              <p> Users don't know what is the "best" configuration setting for them. They don't know how to configure. Some of the terms don't relate to them right away. They need more explanations to help them to understand. </p>
-            
 
-              <p> <span class = "inlinebold">Here comes the problem </span>: how to make the user interface simple but also informational so we can help users configure the safe setting in a more knowledgeable way?  </p>
+                <p>Not to our surprise, most users care about their privacy and how their data is being used. Nevertheless, most of the users indicated that the current Privacy system forces them to agree to privacy requests that they didn't want before they download any apps. The users are worried the apps would not function properly if they deny the data access. Most of them said that they didn't know what their information is sent or sold to third party companies.</p>
+          
+         
 
           </div>
 
 
-        <div class = "iteration" id = "iteration" data-aos="fade-up" data-aos-duration="600">
-          <div class = "secheader" >Iterate from Feedback</div>
 
-           <img src = "../assets/../assets/img/brandeismed.png" style = "width:130%; margin-left:-15%;"></img>
+          <div class = "iteration" id = "wireframing" data-aos="fade-up" data-aos-duration="600"><div class = "secheader">Sketching and Wireframing</div>
+
+              <img src = "../assets/../assets/img/privacywhiteboards.png" style = "width:110%; margin-left:-5%;"></img>
+              <p><span class = "inlinetext"> Information Architecture</span></p>
+
+
+                <p> In order to help us better understand the flow between each parts of the Privacy Settings, I have drawn out the flow diagram that shows the information architecture of the Privacy Manager, circumstances that will activate each section parts, and the connection among each sections. The detailed information architecture is shown below:</p>
+
+                <img src = "../assets/img/brandeisflow.png" style = "width:150%; margin-left:-25%"alt ="Brandeis" >
+
+
+
+                <p><span class = "inlinetext"> Medium Fidelity Design</span></p>
+
+
+                   <p> The medium fidelity prototype includes Install Interface, Notification, and Quick Settings. For each sections, there are some iterations behind the current versions. For example. there are three rounds of Install Interface that have been presented below. The first iteration considered only to display all the information, but the second and third iterations brought up the new concept: "Typical " vs "Atypical" requests. The third version considered circumstances when privacy permission scales up and exceeds the current container box. </p>
+
+
+                  <img src = "../assets/../assets/img/privacymed.png" style = "width:130%; margin-left:-15%;"></img>
+            <img src = "../assets/../assets/img/privacymid2.png" style = "width:130%; margin-left:-15%;"></img>
+
+            </div>
+
+    
+
+
+
+        <div class = "iteration" id = "iteration" data-aos="fade-up" data-aos-duration="600">
+    <!--       <div class = "secheader" >Iterate from Feedback</div> -->
+          
+
+              <p> My initial prototype focused on detailing privacy settings for different purposes and defining what data is being accessed , why the data has been requested, and who is trying to access the data. 
+              </p>
+              
 
          
 
@@ -273,6 +287,7 @@
 
               <img src = "../assets/../assets/img/install1.png" style = "width:130%; margin-left:-15%;"></img>
               <img src = "../assets/../assets/img/install2.png" style = "width:130%; margin-left:-15%"></img>
+               <img src = "../assets/../assets/img/designspec3.png" style = "width:130%; margin-left:-15%"></img>
 
               <p> First version categorizes permissions by “typical” and “atypical” settings. We wanted to add an “ask” option for users so the users can set permission settings only when the data is accessed at the moment. Users can click on the downward arrows to view more details regarding the specific permission.</p>
               <p> In order to help users make safer choices with their settings, we set the typical settings for the app category to be "on" and atypical settings to be "ask". Users can easily expand each setting category to see more details such as <span class = "inlinetext">who</span> is accessing the data, <span class = "inlinetext">what</span> data type is accessed, and <span class = "inlinetext">why</span> the data is requested. </p>
@@ -285,16 +300,28 @@
                <div class = "secheader" id = "reflection">Reflections</div>
                 <p> In the next iteration, I will design how Global Policy (settings for all apps)affects users on install interface. There might be conflicting cases when a user sets location for Global Policy to be on, but the location policy for the specific app is "atypical". We need to inform users this specific case so they don't have conflicting mental models. In our previous version, I think the design is still a lot of text to read. I will do another round of user testing and work on simplying install UI. Furthermore, I will test on adding a recommended permission choice into the UI and iterate from the feedback. </p>
 
-        </div>
+              </div>
 
 
         <div class = "roundtwo" id = "roundtwo" data-aos="fade-up" data-aos-duration="600">
-          <div class = "secheader" >Round Two</div>   
+          <div class = "secheader" >Round Two</div>  
+
             
 
               <h6>Privacy Policy Home Page</h6>
-              <p> From Install Interface to Privacy Policy Home Page </p>
-            
+
+                <p> Since we are designing the Privacy Manager for ALL mobile users, we want to <b>make the interaction as simple as possible while delivering all the information users want to know </b>. We need to make our design simple to use and easy to adapt for all age groups.</p>
+
+                <p>We experimented the Card Sorting research method after the first round of design. The purpose for Card Sorting is to understand what information users care about the most when they configure a privacy setting. </p>
+
+                 <img src = "../assets/../assets/img/privacycardsorts.png" style = "width:130%; margin-left:-15%"></img>
+
+
+                 <p>After five rounds of Card Sorting, we realized that most users care about the “purpose” and “data type” of a privacy request the most. Users also tend to look at all the information together to see if their data is used properly.</p>
+
+
+
+                
               <p> After users interact with Privacy Manager in the Install UI, We also want to allow users to come to Privacy Manager Home Screen to gain more knowledge about their privacy standing. They will have access for more detailed configurations at Privacy Manager Home Page.</p>
 
 
@@ -331,6 +358,27 @@
 
     
         </div>
+
+<!-- 
+
+          <div class = "learning" id = "learning" data-aos="fade-up" data-aos-duration="600">
+             <div class = "secheader" >Learning from Users 2</div>
+          
+
+
+               <p>For user testing, I tried to recruit people outside of my network to receive more critical and unbiased feedback. </p>
+               <p> To begin, I organized my digital prototypes into Invision to create a mobile mockup. I recruited one person from CMU library, one from Starbucks coffee shop, and two people walking on the street. I received a variety of comments during Think Aloud process, but I was able to find repetitive patterns from those information. One common feedback I received from testings was <span class = "inlinebold">Wow. That's a lot of information!"</span></p>
+
+               <img src = "../assets/../assets/img/privacyuserquotes.png" style = "width:130%; margin-left:-15%;"></img>
+          
+               <span class = "inlinebold">Users don't understand why they need to configure and what they can configure without interfering basic functionalities of the app</span>
+              <p> Users don't know what is the "best" configuration setting for them. They don't know how to configure. Some of the terms don't relate to them right away. They need more explanations to help them to understand. </p>
+            
+
+              <p> <span class = "inlinebold">Here comes the problem </span>: how to make the user interface simple but also informational so we can help users configure the safe setting in a more knowledgeable way?  </p>
+
+          </div> -->
+
 
 
          <div class = "finaldesign" id = "finaldesign" data-aos="fade-up" data-aos-duration="600">
