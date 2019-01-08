@@ -215,3 +215,8 @@ p{
 img {
   background: url('../assets/img/brandeiscover.gif') no-repeat;
 }
+
+.video {
+  width:100%;
+  height:500px;
+}
