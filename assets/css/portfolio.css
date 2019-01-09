@@ -430,14 +430,14 @@ a:hover, a:focus, a:active {
   /*border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #fff900;*/
-  background-image: url("../img/star.png");
+  background-image: url("../img/loader2.gif");
   background-size: 100% 100%;
   width: 100px;
   height: 100px;
   transform-origin: center center;
-  -webkit-transform-origin: center center;
+/*  -webkit-transform-origin: center center;
   -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;*/
 }
 
 #loadScreen{
