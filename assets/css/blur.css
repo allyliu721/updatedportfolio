@@ -4,13 +4,15 @@ body,
 html {
   width: 100%;
   height: 100%;
+  line-height:1.8;
 }
 
 body {
-  font-family: 'Source Sans Pro' !important;
+  font-family: 'roboto' !important;
   height:100vh;
   font-size:18px;
   color: #545556;
+  font-weight:300;
 
 }
 
@@ -24,7 +26,7 @@ pre {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    line-height: 1.5;
+    line-height: 1.8;
     font-size:18px;
     color: #545556;
 }
@@ -125,7 +127,7 @@ a {
 
 
 .secheader{
-  font-weight:700;
+  font-weight:600;
   color:#ffa3cc;
   font-size:20px;
   padding-bottom:10px;
@@ -135,11 +137,11 @@ a {
 
 .inlinetext{
   color:#f37b89;
-  font-weight:600;
+  font-weight:400;
 }
 
 .inlinebold{
-  font-weight:650;
+  font-weight:450;
 }
 
 
@@ -177,7 +179,7 @@ footer.footer {
 
 a:hover {
     color: #ffa3cc;
-    font-weight:600;
+    font-weight:500;
     text-decoration:none;
 }
 .previous{
@@ -200,3 +202,6 @@ img {
   background: url('../assets/img/loader.gif') no-repeat;
 }
 
+.row {
+  margin-bottom:6rem;
+}
