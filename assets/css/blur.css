@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: 'roboto' !important;
+  font-family:roboto, helvetica, sans-serif;
   height:100vh;
   font-size:18px;
   color: #545556;
@@ -21,7 +21,7 @@ p{
 }
 
 pre {
-  font-family:'Source Sans Pro';
+  font-family:roboto, helvetica, sans-serif;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -129,7 +129,7 @@ a {
 .secheader{
   font-weight:600;
   color:#ffa3cc;
-  font-size:20px;
+  font-size:25px;
   padding-bottom:10px;
   padding-top:30px;
 
@@ -202,3 +202,7 @@ img {
   background: url('../assets/img/loader.gif') no-repeat;
 }
 
+.gifdemo{
+  border-radius: 10px;
+  box-shadow: 0 2px 21px rgba(0,0,0,.1);
+}

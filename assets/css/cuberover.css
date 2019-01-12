@@ -18,13 +18,13 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro';
+  font-family:roboto, helvetica, sans-serif;
   height:100vh;
 
 }
 
 pre {
-  font-family:'Source Sans Pro';
+  
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -33,6 +33,7 @@ pre {
     font-size:18px;
     color: #545556;
     padding-top:3rem;
+    font-family:roboto, helvetica, sans-serif;
 }
 ul {
   padding: 0;
@@ -182,7 +183,7 @@ a:hover {
 
 body {
 /*  font-family: 'Source Sans Pro'!important; */
-  font-family:roboto;
+  font-family:roboto, helvetica, sans-serif;
   font-weight:300;
   height:100vh;
   font-size:18px;

@@ -14,7 +14,7 @@ p{
 
 
 pre {
-  font-family:roboto;
+  font-family:roboto, helvetica, sans-serif;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -245,7 +245,7 @@ a:hover {
 }
 
 body {
-  font-family: roboto; 
+  font-family:roboto, helvetica, sans-serif; 
   height:100vh;
   font-size:18px;
   color: #545556;
