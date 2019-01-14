@@ -208,6 +208,8 @@
             In this project, we are building a future in which users can know all those information.
   ​          </p>
 
+            <img src = "../assets/img/currentmanager.png" style = "width:120%; margin-left:-10%"alt ="Current Privacy Manager" >
+
           <div class = "secheader">Opportunity Space</div>
 
             <p>If apps had clearer purposes (inferred or declared by devices), then we could create better predictive models of privacy concerns, which can scale to millions of apps and users. What we propose to Android is to ask the app developers to break down privacy requests, help users to recognize typical versus atypical data requests, and give them recommended privacy suggestions. </p> 
@@ -335,7 +337,7 @@
 
                 <p>We experimented the Card Sorting research method after the first round of design. The purpose for Card Sorting is to understand what information users care about the most when they configure a privacy setting. </p>
 
-                 <img src = "../assets/../assets/img/privacycardsorts.png" style = "width:130%; margin-left:-15%"></img>
+                 <img src = "../assets/../assets/img/privacycardsorts.png" style = "width:140%; margin-left:-20%"></img>
 
 
                  <p>After five rounds of Card Sorting, we realized that most users care about the “purpose” and “data type” of a privacy request the most. Users also tend to look at all the information together to see if their data is used properly.</p>
@@ -362,7 +364,7 @@
 
 
                 <img src = "../assets/img/privacyhome.png" style = "width:130%; margin-left:-15%"></img>
-                <span class = "inlinetext">What Users Think</span>
+                <span class = "inlinetext">Privacy Rating</span>
                <li>Users don't know <span class = "inlinebold">why they need to change Privacy Setting</span></li>
                 <li>Users don't know <span class = "inlinebold">how they can configure Privacy Setting the right way</span></li>
                <li>Users don't know what Privacy Overview and Privacy Rating were referred to</li>
@@ -403,30 +405,93 @@
 
 
          <div class = "finaldesign" id = "finaldesign" data-aos="fade-up" data-aos-duration="600">
-          <div class = "secheader" >After Iterations</div>  
+          <div class = "secheader" >Final Iterations</div>  
 
 
-
+<!-- 
            <div class = "brandeisdemo">
               <img src = "../assets/../assets/img/newhomepage.png" class = "column" ></img>
               <img src = "../assets/../assets/img/privacyoverview.gif" class = "column"></img>
 
-          </div> 
+          </div>  -->
            
             
             <p> Our card sorting research shows that most of the users put data type/purposes as their primary concern, and they care least about user of the data. Based on this result, we designed a zoom-in effect for permissions, with which users would see the data type and purposes first, and can zoom in to see details and configure. Users would also be able to turn on/off/ask a group of permissions with one tap. The zoom-in design is applied to install UI, global settings and app settings in configure UI. </p>
 
 
-              <p> For future iterations, I will work on on-boarding screens to walk users through Privacy Manager home screen and introduce functionalities for each section. I will also design detailed pages inside each section. Additionally, I will think more about content in the collapsed hamburger menu.</p>
+          <span class = "inlinetext">Expanded Cards (Previous vs. Updated)</span>
+
+          <div class = "row">
+              <div class = "col-md-6" id = "gifdemo">
+
+               <img class = "gifdemo" src = "../assets/img/oldcards.png" style= width:60% border=1px lightgrey></img>
+              </div>
+
+            <div class = "col-md-6">
+
+                 <img class = "gifdemo" src = "../assets/img/cardexpand.gif" style= width:60% border=1px lightgrey></img>
+            </div>
+          </div>
+
+
+          <p>We eventually decided to use expanded cards than the regular cards. From the previous user testing result, we found out that our design was too overwhelming for users to see at the first place. The expanded cards will give users an overview of the privacy request. At the same time, it also allows users to expand and configure personally. </p>
+
+         
+
+
+          <span class = "inlinetext">Expanded Cards (Previous vs. Updated)</span>
+
+          <div class = "row">
+              <div class = "col-md-6" id = "gifdemo">
+
+               <img class = "gifdemo" src = "../assets/img/oldprivacyhome.png" style= width:60% border=1px lightgrey></img>
+              </div>
+
+            <div class = "col-md-6">
+
+                 <img class = "gifdemo" src = "../assets/img/overviewdemo.gif" style= width:60% border=1px lightgrey></img>
+            </div>
+          </div>
+
+           <p> We would love to show our users a more direct way in grasping Privacy Overview. The new design not only gives users a brief view of their current understanding, but also the proportion of Typical vs. Atypical accesses. Users can browse through different data types and see the trends by clicking on the taps on the right.</p>
+        
+
+
+          <span class = "inlinetext">Privacy Rating (New Idea)</span>
+
+          <div class = "row">
+
+            <div class = "col-md-6">
+
+                 <img class = "gifdemo" src = "../assets/img/privacyratingnew.gif" style= width:60% border=1px lightgrey></img>
+            </div>
+
+            <div class = "col-md-6" id = "gifdemo">
+
+                <p>The Privacy Rating is the new idea that I came up with to encourage users configure their privacy setting. Users are more motivated to change or find out what's wrong with their privacy when they see the score is not perfect. </p>
+            </div>
+          </div>
+
+           <p> We would love to show our users a more direct way in grasping Privacy Overview. The new design not only gives users a brief view of their current understanding, but also the proportion of Typical vs. Atypical accesses. Users can browse through different data types and see the trends by clicking on the taps on the right.</p>
 
 
 
-             <div class = "brandeisdemo">
-              <img src = "../assets/../assets/img/coarselocation.png" class = "column" ></img>
-              <img src = "../assets/../assets/img/coarseoneclick.gif" class = "column"></img>
+            <span class = "inlinetext">Allow Detailed Configuration on just One Click</span>
 
-             </div>
 
+             <div class = "row">
+              <div class = "col-md-6" id = "gifdemo">
+
+               <img class = "gifdemo" src = "../assets/img/coarselocation.png" style= width:60% border=1px lightgrey></img>
+              </div>
+
+            <div class = "col-md-6">
+
+                 <img class = "gifdemo" src = "../assets/img/coarseoneclick.gif" style= width:60% border=1px lightgrey></img>
+            </div>
+          </div>
+
+           <p> Detailed configuration page allows users to turn "On" "Ask" or "Off" on All Permissions in a simple way. It makes privacy configuration easier for all end users. </p>
 
 
           
@@ -437,17 +502,21 @@
            
 
         <div class = "moredesign" id = "moredesign" data-aos="fade-up" data-aos-duration="600">
-          <div class = "secheader" >More Design</div>   
+          <div class = "secheader" >Looking Forward</div>   
            
-            <img src = "../assets/img/quicksettings.png" style = "width:130%; margin-left:-15%"></img>
+          <!--   <img src = "../assets/img/quicksettings.png" style = "width:130%; margin-left:-15%"></img> -->
             
-            <p> We also thought that it would be helpful for users to have quick access to turn ALL the permissions for a specific category "On" or "Off". We did two iterations on the "Quick Settings" menu. The first one is to have "Quick Settings" collapse under the top navigation notification section. The second one will be closer to Android design which includes Quick Setting in one of the quick menus. We will do A/B Testing and Think Aloud Testing on these two iterations. </p>
+          <!--   <p> We also thought that it would be helpful for users to have quick access to turn ALL the permissions for a specific category "On" or "Off". We did two iterations on the "Quick Settings" menu. The first one is to have "Quick Settings" collapse under the top navigation notification section. The second one will be closer to Android design which includes Quick Setting in one of the quick menus. We will do A/B Testing and Think Aloud Testing on these two iterations. </p>
+ -->      
 
-            <p> Our project is still work in progress. I am always happy to chat more about my updates! :)</p>
+              <p> Our project has not ended :) We are in the processing talking to many sponsors and partners. For future iterations, I will conduct more user testings on current design and iterate from feedback. In the meanwhile, I will work on building new on-boarding screens to walk users through Privacy Manager home screen and introduce functionalities for each section. I will also design detailed pages inside each section under "View More". I believe design is a constant process, and there is always more to improve.</p>
+
+            <p> If you are interested in learning about our progress, I am always happy to chat more about my updates! </p>
 
             <br><br>
-
             <img src = "../assets/img/brandeiscover.png" style = "width:130%; margin-left:-15%"></img>
+
+          
         
 
 
