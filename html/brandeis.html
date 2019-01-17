@@ -80,7 +80,7 @@
     <!-- Page Content -->
     <section class="py-5">
       <div class="container" id = "intro" data-aos="fade-up" data-aos-duration="600">
-        <div class = "pageheader" data-aos="fade-up" >
+        <div class = "pageheader"  >
           Privacy Manager
         </div>
 
@@ -122,14 +122,14 @@
 
 
           <div class = "row">
-            <div class = "col-md-6" id = "gifdemo">
+            <div class = "col-md-6" id = "gifdemo" data-aos="fade-right">
                <img class = "gifdemo" src = "../assets/../assets/img/privacyoverview.gif" style= width:70% border=1px lightgrey></img>
               <!--   <img src = "../assets/../assets/img/privacytest.png" style= width:70% border=1px lightgrey></img> -->
 
             </div>
-            <div class = "col-md-6">
+            <div class = "col-md-6" data-aos="fade-left">
               <div class = "secheader">I. Privacy Home Screen</div>
-              <p>The Privacy Home Interface presents users their Privacy Data Overview for the most recent week. Users can get a brief view of their current privacy understanding including "Typical" vs "Atypical" data access filtered by the most frequently used data category, such as Camera, Location, and Contacts. User will have easy access to all permissions by a certain category at Privacy Home page. </p>
+              <p>The Privacy Home Interface presents users their Privacy Data Overview of the most recent week. Users can get a brief view of their current privacy understanding including "Typical" vs "Atypical" data access filtered by the most frequently used data category, such as Camera, Location, and Contacts. User will have easy access to all permissions by a certain category at Privacy Home page. </p>
             </div>
           </div>
         </div>
@@ -137,12 +137,12 @@
 
 
         <div class = "row">
-            <div class = "col-md-6">
+            <div class = "col-md-6" data-aos="fade-right">
                 <div class = "secheader">II. Installation Interface</div>
                 <p> 
                 The Installation Interface allows detailed breakdown configuration which categorizes all data permissions by "Typical" vs "Atypical" Permission based on the specific app category. User will firstly see recommended and default setting from our back-end data. Then he can configure privacy setting by "On", "Ask", and "Off" three options by detailed data request information: "who is accessing the data", "what data is requested", "why is the data being accessed" from permission request. </p>
             </div>
-            <div class = "col-md-6" id = "gifdemo">
+            <div class = "col-md-6" id = "gifdemo" data-aos="fade-left">
                 <img class = "gifdemo" src = "../assets/../assets/img/installdemo.gif" style= width:70%></img>
              
             </div>
@@ -151,11 +151,11 @@
     
 
           <div class = "row">
-            <div class = "col-md-6" id = "gifdemo">
+            <div class = "col-md-6" id = "gifdemo" data-aos="fade-right">
                <img class = "gifdemo" src = "../assets/../assets/img/runtime.gif" style= width:70% border=1px lightgrey></img>
             </div>
-            <div class = "col-md-6">
-              <div class = "secheader">III. Run Time UI</div>
+            <div class = "col-md-6" data-aos="fade-left">
+              <div class = "secheader" >III. Run Time UI</div>
               <p> Run Time UI shows detailed permission request by identifying "who is using the data", "what the data is used for", and "why is the data being accessed" from the permission during app run time following the same card format.</p>
             </div>
           </div>
@@ -163,11 +163,11 @@
           <br>
 
             <div class = "row">
-            <div class = "col-md-6">
+            <div class = "col-md-6" data-aos="fade-right">
                 <div class = "secheader">IV. Quick Settings</div>
                 <p> Quick Settings allow users to turn ALL app permission on hardware for a specific data setting (such as Coarse Location) "On" or "Off" at simple one click. This feature serves well for situations when users needs to go to a confidential meeting. It also fulfills needs for those privacy-sensitive individuals who just want to cut off their data and live in their personal lives. </p>
             </div>
-            <div class = "col-md-6" id = "gifdemo">
+            <div class = "col-md-6" id = "gifdemo" data-aos="fade-left">
                 <img class = "gifdemo" src = "../assets/../assets/img/quicksetting.gif" style= width:70%></img>
              
             </div>
@@ -175,11 +175,11 @@
 
           <br>
             <div class = "row">
-            <div class = "col-md-6" id = "gifdemo">
+            <div class = "col-md-6" id = "gifdemo" data-aos="fade-right">
                <img class = "gifdemo" src = "../assets/../assets/img/coarseoneclick.gif" style= width:70% border=1px lightgrey></img>
             </div>
-            <div class = "col-md-6">
-              <div class = "secheader">V. Configure by Permission</div>
+            <div class = "col-md-6" data-aos="fade-left">
+              <div class = "secheader" >V. Configure by Permission</div>
               <p> User is able to go to Privacy Home and see all current setting for a specific data category. User can see all the apps that are currently requesting this specific data type. The user can not only choose to tap on the cards to see all perissions that have been requested sorted by "data purpose", he can also configure all current settings for this category using "All Permissions" feature. </p>
             </div>
           </div>
@@ -208,18 +208,24 @@
             In this project, we are building a future in which users can know all those information.
   ​          </p>
 
-            <img src = "../assets/img/currentmanager.png" style = "width:120%; margin-left:-10%"alt ="Current Privacy Manager" >
+            <p>After research and Heuristic Evaluation on the current Privacy Manager, we found the following challenges in the current design: </p>
 
-          <div class = "secheader">Opportunity Space</div>
+            <img src = "../assets/img/currentmanager.png" style = "width:120%; margin-left:-10%"alt ="Current Privacy Manager" data-aos="fade-up">
+       
+          <div class = "opportunity" data-aos="fade-up">
+            <div class = "secheader" >Opportunity Space</div>
 
-            <p>If apps had clearer purposes (inferred or declared by devices), then we could create better predictive models of privacy concerns, which can scale to millions of apps and users. What we propose to Android is to ask the app developers to break down privacy requests, help users to recognize typical versus atypical data requests, and give them recommended privacy suggestions. </p> 
-          </div>
-
-
+             <p>If apps had clearer purposes (inferred or declared by devices), then we could create better predictive models of privacy concerns, which can scale to millions of apps and users. What we propose to Android is to ask the app developers to break down privacy requests, help users to recognize typical versus atypical data requests, and give them recommended privacy suggestions. </p> 
+           
 
             <p>Since we are redesigning the whole interaction of users with their privacy-sensitive data and the Privacy Manager, we have broken down the project into five parts: the Privacy Manager Home Pages, Install Interface, Configuration Interface, Run Time Interface, and Quick Setting Interface.</p> 
 
            <img src = "../assets/img/privacygoal.png" style = "width:130%; margin-left:-15%"alt ="Brandeis" >
+
+            </div>
+         
+
+           </div>
 
 
  
@@ -319,9 +325,11 @@
 
 
 
-           
-               <div class = "secheader" id = "reflection">Reflections</div>
+              <div class = "reflections" data-aos="fade-up">
+               <div class = "secheader" id = "reflection" >Reflections</div>
                 <p> In the next iteration, I will design how Global Policy (settings for all apps)affects users on install interface. There might be conflicting cases when a user sets location for Global Policy to be on, but the location policy for the specific app is "atypical". We need to inform users this specific case so they don't have conflicting mental models. In our previous version, I think the design is still a lot of text to read. I will do another round of user testing and work on simplying install UI. Furthermore, I will test on adding a recommended permission choice into the UI and iterate from the feedback. </p>
+
+              </div>
 
               </div>
 
@@ -337,7 +345,7 @@
 
                 <p>We experimented the Card Sorting research method after the first round of design. The purpose for Card Sorting is to understand what information users care about the most when they configure a privacy setting. </p>
 
-                 <img src = "../assets/../assets/img/privacycardsorts.png" style = "width:140%; margin-left:-20%"></img>
+                 <img src = "../assets/img/privacycardsorts.png" style = "width:140%; margin-left:-20%" data-aos="zoom-in" data-aos-duration="1000"></img>
 
 
                  <p>After five rounds of Card Sorting, we realized that most users care about the “purpose” and “data type” of a privacy request the most. Users also tend to look at all the information together to see if their data is used properly.</p>
@@ -349,8 +357,8 @@
 
 
             <div class = "brandeisdemo">
-              <img src = "../assets/../assets/img/oldhome.png" class = "column" ></img>
-              <img src = "../assets/../assets/img/homescreen.gif" class = "column"></img>
+              <img src = "../assets/../assets/img/oldhome.png" class = "column" data-aos="fade-right"></img>
+              <img src = "../assets/../assets/img/homescreen.gif" class = "column" data-aos="fade-left"></img>
 
             </div>
 
@@ -372,8 +380,8 @@
 
          
 
-                <img src = "../assets/img/privacyhome1.png" style = "width:130%; margin-left:-15%"></img>
-                <img src = "../assets/img/privacyhomev3.png" style = "width:130%; margin-left:-15%"></img>
+                <img src = "../assets/img/privacyhome1.png" style = "width:130%; margin-left:-15%" data-aos="fade-up"></img>
+                <img src = "../assets/img/privacyhomev3.png" style = "width:130%; margin-left:-15%" data-aos="fade-up"></img>
 
 
                       <p> After user testing, I removed all the explanations for each section on the home screen to make the interface look clean. The titles should be explanatory enough for users to understand. Users can click in "view details" to get more information on each section. The "Atypical Permissions" will be highlighted at the Privacy Rating section. I also designed another version of interface when a user has malsoftware such as spouseware installed on the computer. User will visually notice on the home screen by both color and privacy score change. </p>
@@ -404,7 +412,7 @@
 
 
 
-         <div class = "finaldesign" id = "finaldesign" data-aos="fade-up" data-aos-duration="600">
+         <div class = "finaldesign" id = "finaldesign" data-aos="fade-up" data-aos-duration="600" >
           <div class = "secheader" >Final Iterations</div>  
 
 
@@ -424,12 +432,12 @@
           <div class = "row">
               <div class = "col-md-6" id = "gifdemo">
 
-               <img class = "gifdemo" src = "../assets/img/oldcards.png" style= width:60% border=1px lightgrey></img>
+               <img class = "gifdemo" src = "../assets/img/oldcards.png" style= width:60% border=1px lightgrey data-aos="fade-right"></img>
               </div>
 
             <div class = "col-md-6">
 
-                 <img class = "gifdemo" src = "../assets/img/cardexpand.gif" style= width:60% border=1px lightgrey></img>
+                 <img class = "gifdemo" src = "../assets/img/cardexpand.gif" style= width:60% border=1px lightgrey data-aos="fade-left"></img>
             </div>
           </div>
 
@@ -444,12 +452,12 @@
           <div class = "row">
               <div class = "col-md-6" id = "gifdemo">
 
-               <img class = "gifdemo" src = "../assets/img/oldprivacyhome.png" style= width:60% border=1px lightgrey></img>
+               <img class = "gifdemo" src = "../assets/img/oldprivacyhome.png" style= width:60% border=1px lightgrey data-aos="fade-right"></img>
               </div>
 
             <div class = "col-md-6">
 
-                 <img class = "gifdemo" src = "../assets/img/overviewdemo.gif" style= width:60% border=1px lightgrey></img>
+                 <img class = "gifdemo" src = "../assets/img/overviewdemo.gif" style= width:60% border=1px lightgrey data-aos="fade-left"></img>
             </div>
           </div>
 
@@ -463,10 +471,10 @@
 
             <div class = "col-md-6">
 
-                 <img class = "gifdemo" src = "../assets/img/privacyratingnew.gif" style= width:60% border=1px lightgrey></img>
+                 <img class = "gifdemo" src = "../assets/img/privacyratingnew.gif" style= width:60% border=1px lightgrey data-aos="fade-right"></img>
             </div>
 
-            <div class = "col-md-6" id = "gifdemo">
+            <div class = "col-md-6" id = "gifdemo" data-aos="fade-left">
 
                 <p>The Privacy Rating is the new idea that I came up with to encourage users configure their privacy setting. Users are more motivated to change or find out what's wrong with their privacy when they see the score is not perfect. </p>
             </div>
@@ -482,12 +490,12 @@
              <div class = "row">
               <div class = "col-md-6" id = "gifdemo">
 
-               <img class = "gifdemo" src = "../assets/img/coarselocation.png" style= width:60% border=1px lightgrey></img>
+               <img class = "gifdemo" src = "../assets/img/coarselocation.png" style= width:60% border=1px lightgrey data-aos="fade-right"></img>
               </div>
 
             <div class = "col-md-6">
 
-                 <img class = "gifdemo" src = "../assets/img/coarseoneclick.gif" style= width:60% border=1px lightgrey></img>
+                 <img class = "gifdemo" src = "../assets/img/coarseoneclick.gif" style= width:60% border=1px lightgrey data-aos="fade-left"></img>
             </div>
           </div>
 
@@ -514,7 +522,7 @@
             <p> If you are interested in learning about our progress, I am always happy to chat more about my updates! </p>
 
             <br><br>
-            <img src = "../assets/img/brandeiscover.png" style = "width:130%; margin-left:-15%"></img>
+            <img src = "../assets/img/brandeiscover.png" style = "width:130%; margin-left:-15%" data-aos="fade-up"></img>
 
           
         
