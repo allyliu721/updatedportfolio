@@ -273,3 +273,8 @@ img {
   border-radius: 10px;
   box-shadow: 0 2px 21px rgba(0,0,0,.1);
 }
+
+#animationdemo{
+  margin-bottom:2rem;
+  margin-top:2rem;
+}
