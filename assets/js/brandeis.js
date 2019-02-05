@@ -24,6 +24,7 @@ $(document).ready(function () {
     });
 });
 
+
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
     $('.sidenav a').each(function () {

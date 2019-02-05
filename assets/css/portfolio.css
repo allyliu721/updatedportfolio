@@ -4,10 +4,58 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
 
+#nav{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  box-shadow: 0 2px 4px hsla(0,0%,50%,.12);
+
+    height: 50px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 9;
+    background-color: white;
+}
+.expand:hover:after {
+  content: '';
+  z-index: 999;
+  position: absolute;
+  width: 32%;
+  height: 26%;
+  top: 48%;
+  left: 7%;
+  right: 0;
+  bottom: 0;
+  background-color: #0F3351;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  pointer-events: none;
+  -webkit-animation-name: text-reveal;
+          animation-name: text-reveal;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+
+
 body,
 html {
   width: 100%;
   height: 100%;
+  font-family: Roboto,Helvetica,Arial,sans-serif !important;
+   font-family: Roboto,Helvetica,Arial,sans-serif !important;
+  line-height:1.8;
 }
 
 body {
@@ -15,6 +63,11 @@ body {
   height:100vh;
 
 }
+p{
+  padding-bottom:5px;
+  padding-top:20px;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -24,49 +77,64 @@ ul {
 
 ul li {
   list-style: none;
+  margin-left: 4.5%;
+  margin-right: 4.5%;
 }
 
 ul li a {
-  text-decoration: none !important; 
-  color: #3d3d3d;
-  font-size: 15px;
+  text-decoration: none !important;
+  color: #72767E;
+  font-size: 14.5px;
+  font-weight: 600;
   display: block;
-  padding: 7px 10px;
+  padding: 10px 0;
   position: relative;
 }
+ul li a:hover {
+  color: #72767E;
+  
+}
+ ul li a:hover:after {
+  transform: scaleX(1);
+ }
+ul li a:before{
+  content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    top: 10px;
+    z-index: 7;
+    left: 0;
+    background-color: #72767E;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .65s cubic-bezier(.7,.3,0,1);
+    -o-transition: all .65s cubic-bezier(.7,.3,0,1);
+    transition: all .65s cubic-bezier(.7,.3,0,1);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    will-change: transform;
+}
+ ul li a:after {
 
-ul li a:before {
-   text-decoration: none;
+  text-decoration: none;
   content: '';
   position: absolute;
-  top: 0;
+  bottom: 8.5px;
   left: 0;
   width: 100%;
-  height: 3px;
-  background-color: #fff900;
+  height: 2px;
+  background-color: #72767E;
   transform: scaleX(0);
   transition: all 0.5s;
   transform-origin: left
 }
-
- ul li a:hover:before, ul li a:hover:after {
-  transform: scaleX(1);
- }
-
- ul li a:after {
-  text-decoration: none;
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #fff900;
-  transform: scaleX(0);
-  transition: all 0.5s;
-  transform-origin: right
+#work:after{
+  display: none;
 }
-
 .btn-xl {
   padding: 1.25rem 2.5rem;
 }
@@ -77,7 +145,7 @@ ul li a:before {
 }
 
 .content-section-heading h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .content-section-heading h3 {
@@ -289,36 +357,44 @@ h6 {
   display: block;
   position: relative;
   overflow: hidden;
+  border-radius: 30px;
   max-width: 530px;
   margin: auto auto 1rem;
 }
-
-.portfolio-item .caption {
+.portfolio-item .caption{
+  display: none;
+}
+.portfolio-item:hover .caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: 70%;
   width: 100%;
   background-color: rgba(33, 37, 41, 0.2);
   position: absolute;
-  top: 0;
+  top: 125px;
   bottom: 0;
   z-index: 1;
 }
 
-.portfolio-item .caption .caption-content {
-  color: #fff;
+.portfolio-item:hover .caption .caption-content {
+  color: #888888;
   margin: auto 2rem 2rem;
+  margin-top: 10% !important;
+  text-align: center;
+  width: 100%;
 }
 
 .portfolio-item .caption .caption-content h2 {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
 .portfolio-item .caption .caption-content p {
-  font-weight: 300;
-  font-size: 1.2rem;
+  font-weight: 100;
+  font-size: 0.9rem;
+  margin-top: 5%;
+  color:#444444 !important;
 }
 
 @media (min-width: 992px) {
@@ -344,14 +420,24 @@ h6 {
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
   }
-  .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
+  #work-items .portfolio-item{
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+   #work-items .portfolio-item:hover {
+    box-shadow: 0 4px 8px rgba(1,1,1,1);
+    transform: scale(1.03);
+    border-radius: 30px;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(255, 255, 255, 0.4);
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
+    background-color: rgba(255, 255, 255, 0.9);
+   border-radius: 25px;
   }
 
 }
@@ -370,8 +456,6 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #6eaff7;
-  font-weight:600;
   text-decoration:none;
 }
 
@@ -430,14 +514,14 @@ a:hover, a:focus, a:active {
   /*border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #fff900;*/
-  background-image: url("../img/loader2.gif");
+  background-image: url("../img/star.png");
   background-size: 100% 100%;
   width: 100px;
   height: 100px;
   transform-origin: center center;
-/*  -webkit-transform-origin: center center;
+  -webkit-transform-origin: center center;
   -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;*/
+  animation: spin 2s linear infinite;
 }
 
 #loadScreen{
@@ -551,4 +635,174 @@ a:hover, a:focus, a:active {
 }
 img {
   background: url('../assets/img/brandeiscover.gif') no-repeat;
+}
+
+
+
+#loader-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow:hidden !important;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background-color:#fff900;
+  
+}
+.loaded #loader-wrapper .loader-section.section-left{
+  -webkit-transform:translateX(-100%);
+  -ms-transform:translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition:all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  transition: all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+    -ms-transition: all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+} 
+.loaded #loader-wrapper .loader-section.section-right{
+  -webkit-transform:translateX(100%);
+  -ms-transform:translateX(100%);
+  transform: translateX(100%);
+  
+    -webkit-transition:all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  transition: all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+    -ms-transition: all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+}
+.loaded #loader{
+  opacity: 1;
+}
+
+.loaded #loader-wrapper{
+  -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+ 
+        -webkit-transition: all 0.3s 1s ease-out; 
+                transition: all 0.3s 1s ease-out;
+}
+.lds-hourglass {
+  display: block;
+  position: relative;
+  left: 46%;
+  top: 40%;
+  z-index: 1001;
+ 
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid #6FA2F7;
+  border-color: #6FA2F7 transparent #6FA2F7 transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+#work-items{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#work-items .aos-animate{
+  padding: 2%;
+}
+#about{
+  padding-top: 10.5rem !important;
+  padding-bottom: 0rem !important;
+}
+
+
+@-webkit-keyframes text-reveal {
+  0%, 50% {
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%; }
+  60%, 100% {
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%; }
+  60% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0); } }
+
+@keyframes text-reveal {
+  0%, 50% {
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%; }
+  60%, 100% {
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%; }
+  60% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0); } }
+
+.after-animation:after {
+  visibility: visible !important;
+  -webkit-transform: scaleX(1) !important;
+  -ms-transform: scaleX(1) !important;
+      transform: scaleX(1) !important; }
+.nav-up {
+    top: -50px !important;
+}   
+
+@media (max-width: 600px) {
+#nav {
+    display: inline-block;
+ 
+}
+#nav .col-2 {
+    max-width: 25%;
+    display: inline-block;
+    float: left;
+}
+.expand{
+  font-size:14px !important;
+}
+#nav .col-8{
+  display: inline-block;
+    float: right;
+    max-width: 75%
+}
+#nav ul li {
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+}
+
+@media (min-width: 605px) and (max-width: 1100px) {
+#nav {
+    display: inline-block;
+ 
+}
+#nav .col-2 {
+    max-width: 15%;
+    margin-left: 5%;
+    display: inline-block;
+    float: left;
+}
+
+#nav .col-8{
+  display: inline-block;
+    float: right;
+    max-width: 48%
+}
 }

@@ -23,6 +23,30 @@
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+
+}
+
+.hvr-grow2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+    box-shadow: 0 2px 21px rgba(0,0,0,.05);
+    margin-bottom:3rem;
+    margin-top:3rem;
+    border-radius:15px;
+}
+.hvr-grow2:hover, .hvr-grow2:focus, .hvr-grow2:active {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+    box-shadow: 0 2px 21px rgba(0,0,0,.05);
+    border-radius:15px;
+
 }
 
 /* Shrink */

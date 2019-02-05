@@ -14,7 +14,7 @@ p{
 
 
 pre {
-  font-family:roboto, helvetica, sans-serif;
+  font-family:roboto;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -245,7 +245,7 @@ a:hover {
 }
 
 body {
-  font-family:roboto, helvetica, sans-serif; 
+  font-family: roboto; 
   height:100vh;
   font-size:18px;
   color: #545556;
@@ -254,7 +254,7 @@ body {
 }
 
 img {
-  background: url('../assets/img/loader.gif') no-repeat;
+  background: url('../assets/img/brandeiscover.gif') no-repeat;
 }
 
 .pageheader{

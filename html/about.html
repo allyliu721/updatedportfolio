@@ -24,53 +24,28 @@
 
 	<div class="container-fluid" id="content">
 	
-<!-- 	<div class="row">
+
+	<div class="row nav-down" id="nav">
     <div class="col-md-1"></div>
 
 
-    <div class="col-md-5  col-xs-4 col-4 float left">
-        <a href="portfolio.html" class="hvr-pulse"><img src="../assets/img/star.png"
-        style="float:left; width: 45px; height: 50px; padding-top:10px; "></a>
+    <div class="col-md-2  col-xs-2 col-2 float left">
+        <a href="portfolio.html" class="expand" style=" padding-top:18px;display:inline-block;color: #72767E;font-weight:bold;font-size:16px;">ALLY LIU<!-- <img src="../assets/img/ally.png"
+                                                       style="float:left; width: 90px; height: 45px; "> --></a>
 
     </div>
 
-
-    <div class="col-md-5 col-xs-8 col-8">
-        <ul class="float-right" style="padding-top: 3%">
+    <div class="col-md-5"></div>
+    <div class="col-md-3 col-xs-8 col-8">
+        <ul class="" style="padding-top: 1.5%;padding-bottom: 1.5%;">
             <li><a href="index.html">Home </a></li>
-            <li><a href="portfolio.html">Work </a></li>
-            <li><a href="about.html">About </a></li>
-            <li><a href="https://drive.google.com/file/d/14xNjcYsXJIy4MJ2v-4cgHmiyIlSiGBnT/view?usp=sharing" target="_blank">Resume</a></li>
-            
+            <li><a href="portfolio.html" >Work </a></li>
+            <li><a href="about.html" id="work" style="border-bottom: 2px solid #72767E;width:100%;padding-left:0px;padding-bottom: 0px !important;">About</a></li>
+            <li><a href="https://drive.google.com/file/d/14xNjcYsXJIy4MJ2v-4cgHmiyIlSiGBnT/view?usp=sharing"
+                   target="_blank">Resume</a></li>
         </ul>
     </div>
     <div class="col-md-1"></div>
-
-	</div> -->
-
-	<div class="row">
-    <div class="col-md-1"></div>
-
-
-    <div class="col-md-5  col-xs-4 col-4 float left">
-        <a href="portfolio.html" class="hvr-grow"><img src="../assets/img/ally.png"
-        style="float:left; width: 90px; height: 45px; padding-top:20px; "></a>
-
-    </div>
-
-
-    <div class="col-md-5 col-xs-8 col-8">
-        <ul class="float-right" style="padding-top: 3%">
-            <li><a href="index.html">Home </a></li>
-            <li><a href="portfolio.html">Work </a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="https://drive.google.com/file/d/14xNjcYsXJIy4MJ2v-4cgHmiyIlSiGBnT/view?usp=sharing" target="_blank">Resume</a></li>
-        </ul>
-    </div>
-    <div class="col-md-1"></div>
-
-
-
 </div>
 
 
@@ -115,7 +90,51 @@
 <script src="../assets/js/about.js"></script>
 <script src="../assets/js/particles.js"></script>
 <script src="../assets/js/app.js"></script>
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
 
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('#nav').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('#nav').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('#nav').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+  });
+</script>
 
 
 

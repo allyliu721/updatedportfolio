@@ -7,7 +7,8 @@
 
 <!-- Links to CSS files -->
 		<link rel = "stylesheet" href = "../assets/css/style.css" type = "text/css" media = "all">
-
+		<link rel = "stylesheet" href = "../assets/css/animate.css" type = "text/css" media = "all">
+			
 		<link href = "https://fonts.googleapis.com/css?family = Lato:400, 700" rel = "stylesheet">
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,22 +18,40 @@
 
 <!-- Home Page Content -->
 <body>
+	 <div id="loader-wrapper">
+       <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+	<div class="container animated bounceInUp delay-1s">
+		<div id="main-content">
+		<ul>
+			<li>A</li>
+			<li>L</li>
+			<li>L</li>
+			<li>Y</li>
+			<li><pre> </pre></li>
+			<li>L</li>
+			<li>I</li>
+			<li>U</li>
+		</ul>
+		<h2>
+			Hi, there! I am a passionate User Experience Designer 👩‍💻 💡 currently studying Master of Human Computer <br>  Interaction Program at CMU. Previous designed at Live Nation. Currently designing at CHIMPS Lab.
+		</h2>
+		</div>
+	</div>
+<!-- 	<div>
+		<p>An Interaction Designer who Codes</p>
+	</div> -->
+
+		<a id = "viewmore" href ="../html/portfolio.html" class= "expand"> View More </a>
 
 
-	<ul>
-		<li>A</li>
-		<li>L</li>
-		<li>L</li>
-		<li>Y</li>
-		<li><pre> </pre></li>
-		<li>L</li>
-		<li>I</li>
-		<li>U</li>
-
-	</ul>
-
-		<a id = "viewmore" href ="portfolio.html"> View More </a>
-
+<script type="text/javascript">
+    $(document).ready(function(){
+            $('body').addClass('loaded');
+      });
+</script>
 
 </body>
 </html>

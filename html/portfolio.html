@@ -24,41 +24,42 @@
     <link href="../assets/css/aos.css" rel="stylesheet">
     <link href="../assets/css/hover.css" rel="stylesheet" media="all">
     <link href="../assets/css/topMenu.css" rel="stylesheet">
+    <link rel = "stylesheet" href = "../assets/css/animate.css" type = "text/css" media = "all">
+    
 
 </head>
 
-<body id="page-top" onload="myFunction()" style="margin:0;">
+<body id="page-top"style="margin:0;">
 
-<div id="loader"></div>
-<div id="loaderText">Might take a bit longer for first time loading...</div>
-<div id="loadScreen"></div>
-<div style="display:none;" id="myDiv" class="animate-bottom">
-</div>
-
+<!-- <div id="loader-wrapper">
+        <div class="lds-hourglass"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div> -->
 
 <!-- Top Navigation -->
 
-<div class="row">
-    <div class="col-md-1"></div>
+<div class="row nav-down" style="width: 100%;" id="nav">
+    <div class="col-md-1" style="padding-left: 0px;padding-right: 0px;"></div>
 
 
-    <div class="col-md-5  col-xs-4 col-4 float left">
-        <a href="portfolio.html" class="hvr-grow"><img src="../assets/img/ally.png"
-                                                       style="float:left; width: 90px; height: 45px; padding-top:20px; "></a>
+   <div class="col-md-2  col-xs-2 col-2 float left" style="padding-left: 0px;">
+        <a href="portfolio.html" class="expand" style=" padding-top:18px;display:inline-block;color: #72767E;font-weight:bold;font-size:16px;">ALLY LIU<!-- <img src="../assets/img/ally.png"
+                                                       style="float:left; width: 90px; height: 45px; "> --></a>
 
     </div>
 
-
-    <div class="col-md-5 col-xs-8 col-8">
-        <ul class="float-right" style="padding-top: 3%">
+    <div class="col-md-5"></div>
+    <div class="col-md-3 col-xs-8 col-8" style="padding-left: 4%;padding-right: 0px;">
+        <ul class="" style="padding-top: 1.5%;padding-bottom: 1.5%;">
             <li><a href="index.html">Home </a></li>
-            <li><a href="portfolio.html">Work </a></li>
+            <li><a href="portfolio.html" id="work" style="border-bottom: 2px solid #72767E;width:100%;padding-left:0px;padding-bottom: 0px !important;">Work </a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="https://drive.google.com/file/d/14xNjcYsXJIy4MJ2v-4cgHmiyIlSiGBnT/view?usp=sharing"
                    target="_blank">Resume</a></li>
         </ul>
-    </div>
-    <div class="col-md-1"></div>
+    </div> 
+    <div class="col-md-1" style="padding-left: 0px;padding-right: 0px;"></div>
 
 
 </div>
@@ -91,10 +92,10 @@
 
 
 <!-- About -->
-<section class="content-section bg-light" id="about">
+<section style="display: none;" class="content-section bg-light" id="about">
     <div class="container text-center">
         <div class="row">
-            <div style="display:none;" id="introduction" class="col-lg-10 mx-auto animate-bottom">
+            <div  id="introduction" class="col-lg-10 mx-auto animated fadeInUp delay-1s">
                 <!--   <div id="typed-strings">
                     <p>Typed.js is a <strong>JavaScript</strong> library.</p>
                     <p>It can type anything you want</p>
@@ -121,15 +122,15 @@
 <section class="content-section" id="portfolio">
     <div class="container-flex" class="wrapper">
 
-        <div class="content-section-heading text-center">
-            <h3 class="text-secondary mb-0 ">Welcome</h3>
-            <h1 class="mb-5 hvr-grow">Selected Projects</h1>
+        <div class="content-section-heading text-center" style="margin-bottom: 50px;">
+            <h2 class="mb-5 hvr-grow animated fadeInUp delay-1s" style="color: #72767E;">Selected Projects</h2>
+            <h5 class="animated fadeInUp delay-1s" style="color: #C6C7CD;font-weight: 300;margin-top: -25px;">BRIDGE THE GAP BETWEEN USER AND NEW TECHNOLOGIES</h5>
         </div>
 
-        <div class="row no-gutters">
+        <div class="row no-gutters" id="work-items">
             <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
                 <a class="portfolio-item" href="cuberover.html">
-              <span class="caption">
+              <span class="caption  animated fadeInUp"">
                 <span class="caption-content">
                   <h2>Cube Rover</h2>
                   <p class="mb-0">Design for Space</p>
@@ -140,11 +141,11 @@
             </div>
 
             <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
-                <a class="portfolio-item" href="darpa.html">
-              <span class="caption">
+                <a class="portfolio-item" href="brandeis.html">
+              <span class="caption  animated fadeInUp"">
                 <span class="caption-content">
                   <h2>Brandeis</h2>
-                  <p class="mb-0">Protecting security on mobile devices</p>
+                  <p class="mb-0" style="line-height: 20px;">Protecting security on mobile devices</p>
                 </span>
               </span>
                     <img class="img-fluid" src="../assets/img/brandeis.gif" style=width:100% alt="Brandeis Project">
@@ -153,7 +154,7 @@
 
             <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
                 <a class="portfolio-item" href="cortibot.html">
-              <span class="caption">
+              <span class="caption  animated fadeInUp"">
                 <span class="caption-content">
                   <h2>CortiBot</h2>
                   <p class="mb-0">Robot AR Health Tracking</p>
@@ -163,27 +164,25 @@
                 </a>
             </div>
 
-
-     
-
             <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
                 <a class="portfolio-item" href="privacy.html">
-              <span class="caption">
+              <span class="caption animated fadeInUp">
                 <span class="caption-content">
                   <h2>Vuno </h2>
-                  <p class="mb-0">Augmented Reality Shopping Experience</p>
+                  <p class="mb-0">Immersive AR Shopping</p>
                 </span>
               </span>
-                    <img class="img-fluid" src="../assets/img/vunoicon2.gif" style=width:100% alt="Vuno">
+                    <img class="img-fluid" src="../assets/img/vunoicon2.gif" alt="Blur Dating">
                 </a>
             </div>
 
+
             <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
                 <a class="portfolio-item" href="livenation.html">
-              <span class="caption">
+              <span class="caption  animated fadeInUp"">
                 <span class="caption-content">
                   <h2>Live Nation Entertainment</h2>
-                  <p class="mb-0">Interaction Design, Prototyping</p>
+                  <p class="mb-0" style="line-height: 20px;">Interaction Design, Prototyping</p>
                 </span>
               </span>
                     <img class="img-fluid" src="../assets/img/livenation.gif" style=width:100% alt="Live Nation">
@@ -194,19 +193,20 @@
 
             <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
                 <a class="portfolio-item" href="blur.html">
-              <span class="caption">
+              <span class="caption  animated fadeInUp"">
                 <span class="caption-content">
                   <h2>Blur</h2>
-                  <p class="mb-0">Delay Reveal Social Dating App</p>
+                  <p class="mb-0" style="line-height: 20px;">Delay Reveal Social Dating App</p>
                 </span>
               </span>
                     <img class="img-fluid" src="../assets/img/blur.png" style=width:100% alt="Blur Dating">
                 </a>
             </div>
+<!-- 
 
             <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
                 <a class="portfolio-item" href="">
-              <span class="caption">
+              <span class="caption animated fadeInUp">
                 <span class="caption-content">
                   <h2>Eeco - E-Waste Management</h2>
                   <p class="mb-0">Coming soon</p>
@@ -214,7 +214,7 @@
               </span>
                     <img class="img-fluid" src="../assets/img/eeco.gif" alt="Eeco">
                 </a>
-            </div>
+            </div> -->
 
 
         </div>
@@ -263,6 +263,56 @@
 <script src="../assets/js/topMenu.js"></script>
 
 
+<script type="text/javascript">
+    $(document).ready(function(){
+            $('body').addClass('loaded');
+      });
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+      // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('#nav').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('#nav').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('#nav').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+  });
+</script>
+<script type="text/javascript">
+
+</script>
 </body>
 
 </html>
