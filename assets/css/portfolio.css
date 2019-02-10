@@ -19,15 +19,15 @@
 }
 .expand:hover:after {
   content: '';
-  z-index: 999;
+  z-index: 11;
   position: absolute;
-  width: 32%;
+  width: 27%;
   height: 26%;
-  top: 48%;
-  left: 7%;
+  top: 45%;
+  left: 0%;
   right: 0;
   bottom: 0;
-  background-color: #0F3351;
+  background-color: #ffe560;
   -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
           transform: scaleX(0);
@@ -379,15 +379,15 @@ h6 {
 
 .portfolio-item:hover .caption .caption-content {
   color: #888888;
-  margin: auto 2rem 2rem;
-  margin-top: 10% !important;
+  margin-top: 25% !important;
   text-align: center;
   width: 100%;
 }
 
 .portfolio-item .caption .caption-content h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
+  color:#5f5f5f;
 }
 
 .portfolio-item .caption .caption-content p {
@@ -421,19 +421,19 @@ h6 {
     clip-path: inset(-1px);
   }
   #work-items .portfolio-item{
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
    #work-items .portfolio-item:hover {
     box-shadow: 0 4px 8px rgba(1,1,1,1);
     transform: scale(1.03);
     border-radius: 30px;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
   .portfolio-item:hover .caption {
     background-color: rgba(255, 255, 255, 0.9);

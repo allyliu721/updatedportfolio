@@ -46,7 +46,7 @@ ul li a {
   position: relative;
 }
 ul li a:hover {
-  color: #72767E;
+  color: #d8d8d8;
   
 }
  ul li a:hover:after {
@@ -105,15 +105,15 @@ ul li a:before{
 }
 .expand:hover:after {
   content: '';
-  z-index: 999;
+  z-index: 11;
   position: absolute;
-  width: 32%;
-  height: 20%;
-  top: 48%;
-  left: 7%;
+  width: 30%;
+  height: 26%;
+  top: 43%;
+  left: 3%;
   right: 0;
   bottom: 0;
-  background-color: lightgrey;
+  background-color: #33296b;
   -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
           transform: scaleX(0);
@@ -169,7 +169,7 @@ ul li a:before{
       transform: scaleX(1) !important; }
 
 a {
-  color:#d8d8d8 !important; 
+  color:white !important;
   font-weight:400;
 }
 
@@ -439,16 +439,20 @@ a {
   left: 50%;
   top: 50%;
   z-index: 11;
-  width: 150px;
-  height: 150px;
+  width: 50px;
+  height: 50px;
   margin: -75px 0 0 -50px;
   /*border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #fff900;*/
+  background-image: url("./assets/img/loader2.gif");
   background-size: 100% 100%;
-  width: 100px;
-  height: 100px;
-  
+  width: 50px;
+  height: 50px;
+  transform-origin: center center;
+/*  -webkit-transform-origin: center center;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;*/
 }
 
 #loadScreen{
@@ -459,7 +463,7 @@ a {
   background-color: white;
 }
 #loadScreen.loadhide{
-  transition: all 1s ease-out;
+  transition: all 2s ease-out;
   display: none;
 }
 
@@ -468,21 +472,10 @@ a {
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 30%;
+  top: calc(20% + 70px);
 }
+/*
 
-
-#loader-wrapper{
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow:hidden !important;
-  width: 100%;
-  height: 100%;
-  z-index: 10000;
-  background-color:#fff900;
-  
-}
 .loaded #loader-wrapper .loader-section.section-left{
   -webkit-transform:translateX(-100%);
   -ms-transform:translateX(-100%);
@@ -511,7 +504,7 @@ a {
  
         -webkit-transition: all 0.3s 1s ease-out; 
                 transition: all 0.3s 1s ease-out;
-}
+}*/
 #firstsec{
   margin-top: 2%;
 }
@@ -611,8 +604,8 @@ footer.footer {
 }
 
 .container {
-  padding-right:10%;
-  padding-left:10%;
+  padding-right:5%;
+  padding-left:5%;
 }
 
 .buttonnav{
@@ -643,6 +636,7 @@ body {
 
 }
 
+
 .pageheader{
   font-size:2rem;
   font-weight:500;
@@ -669,8 +663,7 @@ body {
 }
 
 img {
-  padding-top:2.5rem;
-  padding-bottom:2.5rem;
+  background: url('../assets/img/brandeiscover.gif') no-repeat;
 }
 
 .nav-up {

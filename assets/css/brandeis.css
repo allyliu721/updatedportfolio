@@ -105,15 +105,15 @@ ul li a:before{
 }
 .expand:hover:after {
   content: '';
-  z-index: 999;
+  z-index: 11;
   position: absolute;
-  width: 32%;
-  height: 20%;
-  top: 48%;
-  left: 7%;
+  width: 29%;
+  height: 26%;
+  top: 45%;
+  left: 5%;
   right: 0;
   bottom: 0;
-  background-color: lightgrey;
+  background-color: #ffe560;
   -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
           transform: scaleX(0);
@@ -227,7 +227,7 @@ a {
     width: 100%;
 }
 #flow{
-  padding-bottom: 17%;
+  padding-bottom: 16.5%;
     margin-top: -41%;
     height: auto;
     padding-top: 13.2%;
