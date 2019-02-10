@@ -506,19 +506,19 @@ a:hover, a:focus, a:active {
 
 #loader {
   position: absolute;
-  left: 50%;
+  left: 51%;
   top: 50%;
   z-index: 11;
-  width: 150px;
-  height: 150px;
+  width: 78px;
+  height: 78px;
   margin: -75px 0 0 -50px;
   /*border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #fff900;*/
-  background-image: url("../img/loader2.gif");
+  background-image: url("../img/loader.gif");
   background-size: 100% 100%;
-  width: 100px;
-  height: 100px;
+  width: 78px;
+  height: 78px;
   transform-origin: center center;
 /*  -webkit-transform-origin: center center;
   -webkit-animation: spin 2s linear infinite;
@@ -542,7 +542,8 @@ a:hover, a:focus, a:active {
   position: absolute;
   width: 100%;
   text-align: center;
-  top: calc(50% + 70px);
+  top: calc(45% + 70px);
+  left:1%;
 }
 
 
