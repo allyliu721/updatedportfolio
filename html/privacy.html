@@ -24,10 +24,16 @@
 
 
 
-  <body  >
+  <body onload="myFunction()" >
 <!-- <div id="loader"></div>
 <div id="loaderText"><img src="loader2.gif"></div>
 <div id="loadScreen"></div> -->
+
+<div id="loader"></div>
+<div id="loaderText">Might take a bit longer for first time loading...</div>
+<div id="loadScreen"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+</div>
 
 <div style="display:none;" id="myDiv" class="animate-bottom"></div>
     <!-- Top Navigation -->
@@ -617,6 +623,7 @@
     <!-- JavaScript Files-->
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/portfolio.min.js"></script>
 
     <!--Portfolio-specific Javascript-->
         <script src="../assets/js/aos.js"></script>

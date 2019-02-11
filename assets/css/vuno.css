@@ -463,7 +463,7 @@ a {
   background-color: white;
 }
 #loadScreen.loadhide{
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
   display: none;
 }
 
@@ -474,37 +474,49 @@ a {
   text-align: center;
   top: calc(20% + 70px);
 }
-/*
 
-.loaded #loader-wrapper .loader-section.section-left{
-  -webkit-transform:translateX(-100%);
-  -ms-transform:translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-transition:all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-  transition: all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-    -ms-transition: all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-} 
-.loaded #loader-wrapper .loader-section.section-right{
-  -webkit-transform:translateX(100%);
-  -ms-transform:translateX(100%);
-  transform: translateX(100%);
-  
-    -webkit-transition:all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-  transition: all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-    -ms-transition: all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-}
-.loaded #loader{
-  opacity: 1;
+#loader {
+  position: absolute;
+  left: 51%;
+  top: 50%;
+  z-index: 11;
+  width: 78px;
+  height: 78px;
+  margin: -75px 0 0 -50px;
+  /*border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #fff900;*/
+  background-image: url("../img/loader.gif");
+  background-size: 100% 100%;
+  width: 78px;
+  height: 78px;
+  transform-origin: center center;
+/*  -webkit-transform-origin: center center;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;*/
 }
 
-.loaded #loader-wrapper{
-  -webkit-transform: translateY(-100%);
-            -ms-transform: translateY(-100%);
-                transform: translateY(-100%);
- 
-        -webkit-transition: all 0.3s 1s ease-out; 
-                transition: all 0.3s 1s ease-out;
-}*/
+#loadScreen{
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: white;
+}
+#loadScreen.loadhide{
+  transition: all 1s ease-out;
+  display: none;
+}
+
+#loaderText{
+  z-index: 11;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: calc(45% + 70px);
+  left:1%;
+}
+
 #firstsec{
   margin-top: 2%;
 }
