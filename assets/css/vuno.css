@@ -547,6 +547,14 @@ a {
   margin-top: 5rem;
 }
 
+.subheader{
+    font-weight:400;
+  color:white;
+  font-size:18px;
+  padding-bottom:10px;
+  text-align:center;
+}
+
 .inlinetext{
   color:#577ED1;
   font-weight:300;
@@ -652,7 +660,7 @@ body {
 .pageheader{
   font-size:2rem;
   font-weight:500;
-  margin-top:2rem;
+  margin-top:6rem;
   margin-bottom:0.5rem;
   text-align:center;
   font-color:black;
