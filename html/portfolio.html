@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!---Built with much sincere thanks to StackOverflow, my TA MaryBeth Kery for her office hours, Udemy Creative CSS Animations class by Ahmed Sadek, w3schools, responsive format from Bootstrap, css library from Hover CSS, as well as scroll effect js library from Animate on Scroll, and my dear CMU MHCI cohort for critiques and support. Other libraries are cited on their corresponding pages -->
 <head>
 
     <meta charset="utf-8">
@@ -26,7 +26,6 @@
     <link href="../assets/css/topMenu.css" rel="stylesheet">
     <link rel = "stylesheet" href = "../assets/css/animate.css" type = "text/css" media = "all">
     
-
 </head>
 
 <body id="page-top"style="margin:0;" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" onload="myFunction()">
@@ -37,11 +36,6 @@
 <div style="display:none;" id="myDiv" class="animate-bottom">
 </div>
 
-<!-- <div id="loader-wrapper">
-        <div class="lds-hourglass"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div> -->
 
 <!-- Top Navigation -->
 
@@ -208,7 +202,7 @@
 <footer class="footer text-center">
     <div class="container">
 
-        <p class="text-muted small mb-0">Design & Code by &copy; Ally Liu 2018</p>
+        <p class="text-muted small mb-0">Design & Code by &copy; Ally Liu 2019</p>
     </div>
 </footer>
 
@@ -241,56 +235,15 @@
         startDelay: 1200,
     });
 </script>
-<script src="../assets/js/topMenu.js"></script>
-
+<!-- <script src="../assets/js/topMenu.js"></script>
+ -->
 
 <script type="text/javascript">
     $(document).ready(function(){
             $('body').addClass('loaded');
       });
 </script>
-<script type="text/javascript">
-  $(document).ready(function(){
-      // Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('#nav').outerHeight();
 
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('#nav').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('#nav').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    
-    lastScrollTop = st;
-}
-  });
-</script>
 <script type="text/javascript">
 
 </script>
