@@ -266,7 +266,7 @@ a {
   line-height: 5;
 }
 #wardrobe .pageheader{
-  color: #2F2F2F;
+  color: #45346d;
   font-size: 26px;
   font-weight: 500;
 }
@@ -538,8 +538,8 @@ a {
 }
 
 .inlinetext{
-  color:#577ED1;
-  font-weight:300;
+  color:#383544;
+  font-weight:400;
 }
 
 .inlinebold{
@@ -638,12 +638,12 @@ body {
 }
 
 .pageheader{
-  font-size:2rem;
+  font-size:28px;
   font-weight:500;
-  margin-top:5rem;
+  margin-top:8rem;
   margin-bottom:0.5rem;
   text-align:center;
-  font-color:black;
+  color: #34245d;
 }
 
 .secheader{
