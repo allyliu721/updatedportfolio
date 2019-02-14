@@ -3,301 +3,825 @@
 
   <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
 
-    <title>Ally | Interaction Designer</title>
+      <title>Ally | Interaction Designer</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="../assets/css/blur.css" rel="stylesheet">
-    <link href="../assets/css/aos.css" rel="stylesheet">
-    <link href="../assets/css/hover.css" rel="stylesheet" media="all">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+      <!-- Custom styles for this template -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" rel="stylesheet">
+      <link href="../assets/css/blur.css" rel="stylesheet">
+      <link href="../assets/css/aos.css" rel="stylesheet">
+      <link href="../assets/css/hover.css" rel="stylesheet" media="all">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
   </head>
 
-  <body>
 
-    <!-- Navigation -->
-<div class="row">
+
+  <body  data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+<div id="loader"></div>
+<div id="loaderText"><img src="blurload.gif"></div>
+<div id="loadScreen"></div>
+
+<!-- <div id="loader"></div>
+<div id="loaderText">Might take a bit longer for first time loading...</div>
+<div id="loadScreen"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+</div>
+ -->
+
+<!--  <div id="loader"></div>
+<div id="loaderText">Might take a bit longer for first time loading...</div>
+<div id="loadScreen"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+</div>
+<div style="display:none;" id="myDiv" class="animate-bottom"></div> -->
+    <!-- Top Navigation -->
+
+<div class="row nav-down" id="nav">
     <div class="col-md-1"></div>
 
 
-    <div class="col-md-5  col-xs-4 col-4 float left">
-        <a href="portfolio.html" class="hvr-grow"><img src="../assets/img/ally.png"
-        style="float:left; width: 90px; height: 45px; padding-top:20px; "></a>
+    <div class="col-md-2  col-xs-2 col-2 float left">
+        <a href="portfolio.html" class="expand" style=" padding-top:18px;display:inline-block;color: #72767E;font-weight:bold;font-size:16px;">ALLY LIU<!-- <img src="../assets/img/ally.png"
+                                                       style="float:left; width: 90px; height: 45px; "> --></a>
 
     </div>
 
-
-    <div class="col-md-5 col-xs-8 col-8">
-        <ul class="float-right" style="padding-top: 3%">
+    <div class="col-md-5"></div>
+    <div class="col-md-3 col-xs-8 col-8">
+        <ul class="" style="padding-top: 1.5%;padding-bottom: 1.5%;">
             <li><a href="index.html">Home </a></li>
-            <li><a href="portfolio.html">Work </a></li>
+            <li><a href="portfolio.html" id="work" style="border-bottom: 2px solid #72767E;width:100%;padding-left:0px;padding-bottom: 0px !important;">Work </a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="https://drive.google.com/file/d/14xNjcYsXJIy4MJ2v-4cgHmiyIlSiGBnT/view?usp=sharing" target="_blank">Resume</a></li>
+            <li><a href="https://drive.google.com/file/d/14xNjcYsXJIy4MJ2v-4cgHmiyIlSiGBnT/view?usp=sharing"
+                   target="_blank">Resume</a></li>
         </ul>
     </div>
     <div class="col-md-1"></div>
-
-
-
 </div>
 
 
 
     <header>
-        <div id = "mainpic">
-          <img src = "../assets/img/blurcover.png" alt ="Blur" style = "width:100%">
-        </div>
+
+       <div id = "mainpic">
+        <img src = "../assets/img/blurcover.png" alt ="Blur Cover" style = "width:100%">
+      </div>
+
 
     </header>
 
+     <div class="sidenav">
+        <div id = "sidenav-center">
+        <div id = "sidefirst"><a href="#firstsec">Overview</a></div>
+        <div id = "sidesecond"><a href="#intro">Design Demo</a></div>
+        <a href="#third">Understand Problems</a>
+        <a href="#fourth">Learn from Users</a>
+        <a href="#fifth">Iterate and Iterate</a>
+        <a href="#sixth">Round Two</a>
+        <a href="#seventh">Finalize and Deliver</a>
+        <a href="#eight">Reflection</a>
+        </div>
+    </div>
+
 
     <!-- Page Content -->
-    <section class="py-5">
-      <div class="container" data-aos="fade-up" data-aos-duration="600">
-        <h2><b>Blur Dating</b></h2>
-        <p>Blur is a new social app that redefines how you chat, meet and date by showcasing your personalities, interests and lifestyle before anything else. </p>
-
-         <br><p>If you’re tired of appearance-driven social apps, this new app that blurs your match’s face might be just for you. Blur is a new dating and friendship app which blurs out your match's face until you strike up a conversation</p>
-
-
-          <div class = "row">
-            <div class = "col-md-6" id = "gifdemo" data-aos="fade-right">
-               <img class = "gifdemo" src = "../assets/img/blurwelcome.gif" style= width:70% border=1px lightgrey></img>
+        <section class="py-5" id="firstsec">
+      <div class="col-md-12 row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" >
+        <!--   <img src="../assets/img/marketing.png" style="width: 100%;"> -->
+          <div class="col-md-12 row" style="margin-top: 3%;">
+            <div class="col-md-3" style="text-align: right; width: 33.333%;" >
             </div>
-            <div class = "col-md-6" data-aos="fade-left">
-              <div class = "secheader">I. Welcome Page</div>
-              <p> The welcome page uses vibrant color and micro-interactions to make users feel soothing and relaxed. </p>
-            </div>
-          </div>
-
-          <br><br><br>
-      
-
-
-          <div class = "row">
-            <div class = "col-md-6" data-aos="fade-right">
-                <div class = "secheader">II. The Matching Wheel</div>
-                <p> Unlike other apps which simply swipes left and right, Blur provides a range of profiles users can be matched with from the Matching Wheel.  </p>
-            </div>
-            <div class = "col-md-6" id = "gifdemo" data-aos="fade-left">
-                <img class = "gifdemo" src = "../assets/../assets/img/blurhome.gif" style= width:70%></img>
-             
-            </div>
-          </div>
-
-                  <br><br><br>
-
-
-          <div class = "row" >
-            <div class = "col-md-6" id = "gifdemo" data-aos="fade-right">
-               <img class = "gifdemo" src = "../assets/img/blurwheel.gif" style= width:70% border=1px lightgrey></img>
-            </div>
-            <div class = "col-md-6" data-aos="fade-left">
-              <div class = "secheader">III. Gamification</div>
-              <p> Blur uses Machine Learning and pair you with your personality. All matches' faces will be blurred until you answer all the questions. </p>
-            </div>
-          </div>
-                  <br><br><br>
-
-
-          <div class = "row" id = "animationdemo">
-            <div class = "col-md-6" data-aos="fade-right">
-                <div class = "secheader">IV. Personality Hexagon</div>
-                <p> When there is a match, user will see his or her match with personality diagnosis which accompanied with some fun animations. For example, users will see specific aspects of match's personality such as caring and outgoing levels in our personality hexagon. There are always more aspects to explore.</p>
-            </div>
-            <div class = "col-md-6" id = "gifdemo" data-aos="fade-left">
-                <img class = "gifdemo" src = "../assets/../assets/img/matchanimation.gif" style= width:70%></img>
-             
-            </div>
-          </div>
-                  <br><br><br>
-
-
-          <div class = "row" id = "animationdemo">
-            <div class = "col-md-6" id = "gifdemo" data-aos="fade-right">
-               <img class = "gifdemo" src = "../assets/img/blurcompare.gif" style= width:70% border=1px lightgrey></img>
-            </div>
-            <div class = "col-md-6" data-aos="fade-left">
-              <div class = "secheader" >V. More Fun to Explore</div>
-              <p> User can explore more fun under Daily Challenge tab to complete their Peronslaity Hexagon. Challenge will be different everyday. Users can see how their decision affects their profiles.</p>
-            </div>
-          </div>
-
-
-          <div class = "intro" data-aos="fade-up" data-aos-duration="600">
-          <div class = "secheader">Background</div>
-
-          <p>Regardless of how busy we are with work, school, or life, we might feel lonely sometime at some point and we just need someone to talk to. 
-          With today’s social or dating applications which take milliseconds to swipe and find matches, it has become easy to find quick matches, but . People come with strong intention or purpose, and it is hard to find someone who matches with your thoughts and who you can truly talk to. </p>
-
-          <br><p>People often say “the dating apps have killed romance”. It takes milliseconds to swipe right. You don’t have much time to think through before you make a decision. </p>
-
-          </div>
-
-          <br><br>
-
-          <div class = "opportunity" data-aos="fade-up" data-aos-duration="600">
-          <div class = "secheader">Opportunity Space</div>
-
-          <p>Blur is a new social platform to find, chat and connect by showcasing your personality and interests before anything else. 
-
-          Finding a match is as fun as playing a game on Blur - the photos of your potential matches are initially blurred, as you answer short and fun quiz questions, they become clear</p>
-
-          <p><span class = "inlinetext">It’s personality first </span>  By answering simple & fun questions, you’ll meet interesting people and not make snap judgements based on a single profile photo.</p>
-          <p><span class = "inlinetext">Privacy is vital </span>  Profile photos are blurred and only revealed to people that share the same value and interests.</p>
-          <p><span class = "inlinetext">Make better matches </span>  Backed by advanced machine learning algorithms, Blur builds a comprehensive profile that makes better recommendations that fit you.
-          </p>
-
-          <p>As users enjoy answering fun questions to de-blur their matches, Blur is simultaneously building comprehensive profiles for them, so the more they play the better matches become. </p>
-
-
-          <br><br>
-
-
-           <div class = "start" data-aos="fade-up" data-aos-duration="600">
-             <div class = "secheader" >Getting Started</div>
-
-            <p>As the only designer on the startup team, I took a lot of responsibilities for all visual aspects. As past paced as a startup can be, I was in charge of wireframing, prototyping, user testing on each prototype at different stages, working with engineers to meet app updates, and assisting with any design-related visual needs for other purposes. 
-  ​           </p>
-          <img src = "../assets/img/flowchart.png" style = "width:120%; margin-left:-10%"></img>
-
-             <p>For the first version of the design, our team decided to use light pink and blue; nevertheless, some users reflected that the design wasn't engagine enough to capture their attention. There are too many social apps that are competing for the same user group. 
-  ​           </p>
-
-          <p> <span class = "inlinebold">Here comes the problem </span>: How can we make ourselves stand out from other similar social apps?  </p>
-
-
-            <p>We need to break the traditional flat design like other apps do and add more fun animated elements. Our design needs to be visually appealing but also simple and user friendly.
-  ​           </p>
-
-          <img src = "../assets/img/bluroverview.png" style = "width:120%; margin-left:-10%"></img>
-
-            </div>
-          </div>
-
-        
-     
-          <img src = "../assets/img/marketing.png" style = "width:120%; margin-left:-10%"></img>
-
-
-           <br><br>
-            <div class = "secheader" >Iterate from Feedback</div>
-            <br>
-
-
-                   
-        
-            <p> For onboarding screen, my design philosophy is to create simple yet fun design to quickly collect users' information to fasten the onboarding process. Users can click in sign in to access other partners to fill out information, or they could simply answer a short series of questions with animation.</p>
-            <br>
-
-            <img src = "../assets/img/blur1.png" style = "width:120%; margin-left:-10%"></img>
-            <span class = "inlinebold">Users will be directed to different pools with similar goals by this onboarding process.</span>
-            <p> Since we are personality based social app, we also encourage users to meet like minded friends based on our intervention. We understand the needs that sometimes users just need someone to talk to. Therefore, they will be paired with people who have similar purposes. </p>
-            <br>
-
-
-
-      
-
-          <div class = "blurdemo">
-              <img src = "../assets/../assets/img/blurhome.png" class = "column" ></img>
-              <img src = "../assets/../assets/img/matchanimation.gif" class = "column"></img>
-
-          </div>
-
-           <div class = "secheader" > _</div>
-          <h6> </h6>
-
-            <p> We did interviews users in four different age groups 18-28, 28-38, 38-48, and 48 above about their attitudes toward existing social apps. We identified that some of them don't use social apps because they don't like people with strong intention from existing social apps. They prefer to take time and develop stronger bonding relationships not only just for dating purposes.</p>
-
-             <img src = "../assets/img/blurmessage.png" style = "width:120%; margin-left:-10%"></img>
-
-
-
-
-             <p> Therefore, we wanted to design the app making the app intention clear for both parties at the beginning. If a user is not single, we will automatically pair this user with the friend's pool</p>
-            <p> In order to make the process even more fun, users will see eight blurred profile photots in front of them when they answer questions. The profile wheel will keep spinning until the user answers enough questions for our AI system to match him or her with the other user in our system who has best match. </p>
-
-            <div class = "row">
-              <div class = "col-md-6" id = "gifdemo">
-
-               <img class = "gifdemo" src = "../assets/img/blurchat.png" style= width:60% border=1px lightgrey></img>
+            <div class="col-md-6" style="width: 33.333%;text-align: left;" id="firstsec1">
+             <div class = "teamchart">
+              <p style="margin-left:-1% !important"><span class = "firstsecBold">Team&nbsp;&nbsp;&nbsp;&nbsp;</span>Blur Technology<br></p>
+              <p><span class = "firstsecBold">Role&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Design Team Lead</p>
+              <p><span class = "firstsecBold">Tool&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Sketch</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figma</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invision</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Principle</p>
+              <p style="margin-left: -13% !important;"><span class = "firstsecBold"> Duration</span>&nbsp;&nbsp;&nbsp;&nbsp;2017 Spring Design Position</p>
               </div>
 
-            <div class = "col-md-6">
-
-                 <img class = "gifdemo" src = "../assets/img/blurchat.gif" style= width:60% border=1px lightgrey></img>
+            </div>
+            <div class="col-md-3" style="text-align: left;width: 33.333%;">
             </div>
           </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
 
 
-           <br><p> After the match, user will see the the common features she or he shares with the other match immediately. User can simply choose anything from conversation starter to start the conversation. The user will have access to personality matrix as well by clicking match's profile picture. Nevertheless, in order to know more about the match, user needs to talk to the match more to deblur other information through "Light Up" feature. </p>
+    <div class="col-md-12 row" id="wardrobe">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
 
+          <div class = "col-md-12 row">
+           <div class = "col-md-1"></div>
+              <div class = "col-md-10" data-aos="fade-up" data-aos-duration="600">
+                <div class = "pageheader" >
+                  Blur Dating
+                </div>
+              <p>Blur is a new social app that redefines how you chat, meet and date by showcasing your personalities, interests and lifestyle before anything else. </p>
 
-            <img src = "../assets/img/blur2.png" style = "width:120%; margin-left:-10%"></img>
-
-
-            <div class = "intro" data-aos="fade-up" data-aos-duration="600">
-          <div class = "secheader">New Features</div>
-
-          <p>The new feature we want to introduce is called "Light Up" to motivate users talk to their matches more. Once users match and deblur their matches' faces, they won't immediately know all information from their matches. They need to talk to the match at a certain conversation level to fully light up the "BLUR" letters and deblur more information such as "Career" and "Education". </p>
-
-           <img src = "../assets/img/blurdesign3.png" style = "width:120%; margin-left:-10%"></img>
-
-
-     
-
-          </div>
-
-
-
-            <br>
-            <div class = "secheader" >Reflections</div>
-            <p>During my time designing at Blur as a new startup, I learned to combine my business knowledge with design and adapt to this fast-paced environment. Most importantly, I learned how to take on ownership responsibility on tasks I was assigned because I knew how much my decision would affect the team and the company. </p>
-            <p> For future iterations, I would love to explore more on how to make Blur <span class = "inlinetext">more fun and personal </span>  for users. Currently, we focus a lot on matching users together based on their personality. In the future, I would love to focus more on <span class = "inlinetext">building stronger relationship </span> between matches after they connect. To keep users coming back, I would love the possibility to explore community aspect. If we could use AI and Maching Learning to build a community for people with shared personality or interests, then users would be more likely to stay on the app. Furthermore, I would love to explore possibilities of creating <span class = "inlinetext">more fun "deblur" games</span>   other than answering questions. </p>
-
-            <p>Thanks for reading about Blur. If you are interested in the project, I am happy to share more about it.</p>
-         
-
-
-   
-        
-
-          <div class = "buttonnav">
-             <a href="cortibot.html" class="previous hvr-grow"> &laquo;  Previous Project</a>
-              <a href="about.html" class="next hvr-grow">About Me &raquo;</a>
-          </div>
-
-
+               <br><p>If you’re tired of appearance-driven social apps, this new app that blurs your match’s face might be just for you. Blur is a new dating and friendship app which blurs out your match's face until you strike up a conversation</p>
+              </div>
+          <div class = col-md-1"></div>
+        </div>
+      </div>
+        <div class="col-md-2"></div>
       </div>
     </section>
 
-    <!-- Footer -->
+
+
+
+    <section id = "intro">
+    <div class = "imagebreak"></div>
+    <div class = "imagebreak"></div>
+    <div class = "imagebreak"></div>
+
+
+
+
+      <div class="container">
+        <div class="col-md-12 row">
+
+        <div class="col-md-5" id="sec2-image">
+          <img class = "gifdemo" src="../assets/img/blurwelcome.gif">
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-duration="600">
+          <p id="digit">I. <span class = "text"> Welcome Page</span></p>
+         <p> The welcome page uses vibrant color and micro-interactions to make users feel soothing and relaxed. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class = "imagebreak"></div>
+
+
+    <div class="container">
+        <div class="col-md-12 row">
+
+        <div class="col-md-6" data-aos="fade-up" data-aos-duration="600">
+          <p id="digit">II. <span class = "text"> The Matching Wheel </span></p>
+          <p> Unlike other apps which simply swipes left and right, Blur provides a range of profiles users can be matched with from the Matching Wheel.  </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5" id="sec2-image">
+          <img class = "gifdemo" src="../assets/img/blurhome.gif">
+        </div>
+
+      </div>
+    </div>
+
+     <div class = "imagebreak"></div>
+
+
+    <div class="container">
+        <div class="col-md-12 row">
+        <div class="col-md-5" id="sec2-image">
+          <img class = "gifdemo" src="../assets/img/blurwheel.gif">
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-duration="600">
+          <p id="digit">III.  <span class = "text"> Gamification </span></p>
+          <p> Blur uses Machine Learning and pair you with your personality. All matches' faces will be blurred until you answer all the questions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class = "imagebreak"></div>
+
+
+    <div class="container">
+        <div class="col-md-12 row">
+        <div class="col-md-6" data-aos="fade-up" data-aos-duration="600">
+          <p id="digit">IV. <span class="text">Personality Hexagon</span></p>
+           <p> When there is a match, user will see his or her match with personality diagnosis which accompanied with some fun animations. For example, users will see specific aspects of match's personality such as caring and outgoing levels in our personality hexagon. There are always more aspects to explore.</p>
+        </div>
+          <div class="col-md-1"></div>
+        <div class="col-md-5" id="sec2-image">
+          <img class = "gifdemo" src="../assets/img/matchanimation.gif">
+        </div>
+      
+      </div>
+    </div>
+
+     <div class = "imagebreak"></div>
+
+    <div class="container">
+        <div class="col-md-12 row">
+        <div class="col-md-5" id="sec2-image">
+          <img class = "gifdemo" src="../assets/img/blurcompare.gif">
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-duration="600">
+          <p id="digit">V.  <span class="text">More Fun to Explore</span></p>
+          <p> User can explore more fun under Daily Challenge tab to complete their Peronslaity Hexagon. Challenge will be different everyday. Users can see how their decision affects their profiles. </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+  <div class = "imagebreak"></div>
+  <div class = "imagebreak"></div>
+
+
+
+  <section id="third" >
+     <div class = "imagebreak"></div>
+      <div class = "imagebreak"></div>
+       <div class = "imagebreak"></div>
+        <div class = "imagebreak"></div>
+      <div class="col-md-12 row" >
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+          <div class = "col-md-12 row">
+           <div class = "col-md-1"></div>
+              <div class = "col-md-10" data-aos="fade-up" data-aos-duration="600">
+                <div class = "pageheader" >
+                  - Background -
+                </div>
+                <p>Regardless of how busy we are with work, school, or life, we might feel lonely sometime at some point and we just need someone to talk to. 
+                 With today’s social or dating applications which take milliseconds to swipe and find matches, it has become easy to find quick matches, but . People come with strong intention or purpose, and it is hard to find someone who matches with your thoughts and who you can truly talk to. </p>
+
+                <br><p>People often say “the dating apps have killed romance”. It takes milliseconds to swipe right. You don’t have much time to think through before you make a decision. </p>
+          <div class = col-md-1"></div>
+        </div>
+      </div>
+        <div class="col-md-2"></div>
+      </div>
+
+
+       <div class="col-md-12 row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+          <div class = "col-md-12 row">
+           <div class = "col-md-1"></div>
+              <div class = "col-md-10">
+
+               <div class = "pageheader" >
+                  - Opportunity Space -
+                </div>
+            
+                <p>Blur is a new social platform to find, chat and connect by showcasing your personality and interests before anything else. 
+
+            Finding a match is as fun as playing a game on Blur - the photos of your potential matches are initially blurred, as you answer short and fun quiz questions, they become clear</p>
+
+               <a href="../assets/img/bluroverview.png" class="with-caption image-link" title="Design Process">
+          <img class = "hvr-grow2" style = "width:120%; margin-left:-10%"src="../assets/img/bluroverview.png">
+          </a>
+
+           <p><span class = "inlinetext">It’s personality first </span>  By answering simple & fun questions, you’ll meet interesting people and not make snap judgements based on a single profile photo.</p>
+           <p><span class = "inlinetext">Privacy is vital </span>  Profile photos are blurred and only revealed to people that share the same value and interests.</p>
+           <p><span class = "inlinetext">Make better matches </span>  Backed by advanced machine learning  algorithms, Blur builds a comprehensive profile that makes better recommendations that fit you.
+           </p>
+
+           <p>As users enjoy answering fun questions to de-blur their matches, Blur is simultaneously building comprehensive profiles for them, so the more they play the better matches become. </p>
+          <div class = col-md-1"></div>
+        </div>
+      </div>
+        <div class="col-md-2"></div>
+      </div>
+
+
+    </section>
+
+
+
+
+  <section id="fourth" >
+      <div class="col-md-12 row" id="fourth" data-aos="fade-up" data-aos-duration="600">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+          <div class = "col-md-12 row">
+           <div class = "col-md-1"></div>
+              <div class = "col-md-10" >
+                <div class = "pageheader"  >
+                   <div class = "imagebreak"></div>
+                    <div class = "imagebreak"></div>
+                     <div class = "imagebreak"></div>
+                  - Getting Started -
+                </div>
+                  <p>As the only designer on the startup team, I took a lot of responsibilities for all visual aspects. As past paced as a startup can be, I was in charge of wireframing, prototyping, user testing on each prototype at different stages, working with engineers to meet app updates, and assisting with any design-related visual needs for other purposes. 
+  ​           </p>
+          
+          <div class = col-md-1"></div>
+        </div>
+      </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="col-md-12 row" id="sec3-img">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <a href="../assets/img/flowchart.png" class="with-caption image-link" title="Design Process">
+          <img class = "hvr-grow2" src="../assets/img/flowchart.png">
+          </a>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+       <div class="col-md-12 row" id="third">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+          <div class = "col-md-12 row">
+           <div class = "col-md-1"></div>
+              <div class = "col-md-10">
+            
+                 <p>For the first version of the design, our team decided to use light pink and blue; nevertheless, some users reflected that the design wasn't engagine enough to capture their attention. There are too many social apps that are competing for the same user group. 
+  ​               </p>
+
+                 <p> <span class = "inlinebold">Here comes the problem </span>: How can we make ourselves stand out from other similar social apps?  </p>
+
+             <p>We need to break the traditional flat design like other apps do and add more fun animated elements. Our design needs to be visually appealing but also simple and user friendly.
+  ​           </p>
+     
+          <div class = col-md-1"></div>
+        </div>
+      </div>
+        <div class="col-md-2"></div>
+      </div>
+
+
+      <div class="col-md-12 row" id="sec3-img">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+         
+
+            <a href="../assets/img/marketing.png" class="with-caption image-link" title="Design Process">
+          <img src="../assets/img/marketing.png">
+          </a>
+
+
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+    </section>
+
+
+    <div class = "imagebreak"></div>
+      <div class = "imagebreak"></div>
+
+
+
+  <section id="fifth" data-aos="fade-up" >
+      <div class="col-md-12 row" id="fifth" >
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+          <div class = "col-md-12 row">
+           <div class = "col-md-1"></div>
+              <div class = "col-md-10" >
+                <div class = "pageheader"  >
+
+                   <div class = "imagebreak"></div>
+                    <div class = "imagebreak"></div>
+                     <div class = "imagebreak"></div>
+                  - Iterate from Feedback -
+                </div>
+                   
+            <p> For onboarding screen, my design philosophy is to create simple yet fun design to quickly collect users' information to fasten the onboarding process. Users can click in sign in to access other partners to fill out information, or they could simply answer a short series of questions with animation.</p>
+          <div class = col-md-1"></div>
+        </div>
+      </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="col-md-12 row" id="sec3-img">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <a href="../assets/img/blur1.png" class="with-caption image-link" title="Design Process">
+          <img class = "hvr-grow2" src="../assets/img/blur1.png">
+          </a>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+       <div class="col-md-12 row" id="third">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+          <div class = "col-md-12 row">
+           <div class = "col-md-1"></div>
+              <div class = "col-md-10">
+            
+                <span class = "inlinebold">Users will be directed to different pools with similar goals by this onboarding process.</span>
+            <p> Since we are personality based social app, we also encourage users to meet like minded friends based on our intervention. We understand the needs that sometimes users just need someone to talk to. Therefore, they will be paired with people who have similar purposes. </p>
+     
+          <div class = col-md-1"></div>
+        </div>
+      </div>
+        <div class="col-md-2"></div>
+      </div>
+
+
+    </section>
+
+
+
+  <section id="sixth" >
+      <div class="col-md-12 row" id="sixth">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+     
+            <div class = "brandeisdemo">
+              <img  src = "../assets/../assets/img/blurhome.png" class = "column gifdemo" data-aos="fade-right"></img>
+              <img  style = "padding-top:8px; padding-bottom:10px"src = "../assets/../assets/img/matchanimation.gif" class = "column gifdemo" data-aos="fade-left"></img>
+
+            </div>
+
+               <div class = "pstyle">
+
+                <p> We did interviews users in four different age groups 18-28, 28-38, 38-48, and 48 above about their attitudes toward existing social apps. We identified that some of them don't use social apps because they don't like people with strong intention from existing social apps. They prefer to take time and develop stronger bonding relationships not only just for dating purposes.</p>
+            </div>
+
+              <a href="../assets/img/blurmessage.png" class="with-caption image-link" title="Design Process">
+          <img class = "hvr-grow2"src="../assets/img/blurmessage.png" style = "width:100%;">
+          </a>
+
+
+             <div class = "pstyle">
+               <p> Therefore, we wanted to design the app making the app intention clear for both parties at the beginning. If a user is not single, we will automatically pair this user with the friend's pool</p>
+            <p> In order to make the process even more fun, users will see eight blurred profile photots in front of them when they answer questions. The profile wheel will keep spinning until the user answers enough questions for our AI system to match him or her with the other user in our system who has best match. </p>
+            </div>
+
+
+              <div class = "brandeisdemo">
+              <img src = "../assets/../assets/img/blurchat.png" class = "column gifdemo" data-aos="fade-right"></img>
+              <img src = "../assets/../assets/img/blurchat.gif" class = "column gifdemo" data-aos="fade-left"></img>
+
+            </div>
+
+
+             <div class = "pstyle">
+             <p> After the match, user will see the the common features she or he shares with the other match immediately. User can simply choose anything from conversation starter to start the conversation. The user will have access to personality matrix as well by clicking match's profile picture. Nevertheless, in order to know more about the match, user needs to talk to the match more to deblur other information through "Light Up" feature. </p>
+            </div>
+
+              <a href="../assets/img/blur2.png" class="with-caption image-link" title="Design Process">
+          <img class = "hvr-grow2"src="../assets/img/blur2.png" style = "width:100%;">
+          </a>
+
+        </div>
+      </div>
+        <div class="col-md-2"></div>
+      </div>
+    </section>
+
+
+
+  <section id="seventh" >
+      <div class="col-md-12 row" id="seventh">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+          <div class = "pstyle">
+                <div class = "pageheader"  >
+                   <div class = "imagebreak"></div>
+                    <div class = "imagebreak"></div>
+                    <div class = "imagebreak"></div>
+                    <div class = "imagebreak"></div>
+                  - New Features-
+                  </div>
+                
+                 <p>The new feature we want to introduce is called "Light Up" to motivate users talk to their matches more. Once users match and deblur their matches' faces, they won't immediately know all information from their matches. They need to talk to the match at a certain conversation level to fully light up the "BLUR" letters and deblur more information such as "Career" and "Education". </p>
+
+          </div>
+
+          <a href="../assets/img/blurdesign3.png" class="with-caption image-link" title="Design Process">
+          <img class = "hvr-grow2"src="../assets/img/blurdesign3.png" style = "width:100%;">
+          </a>
+
+        </div>
+      </div>
+        <div class="col-md-2"></div>
+      </div>
+
+
+
+
+
+</section>
+
+
+
+
+  <section id="eight" >
+      <div class="col-md-12 row" id="eight">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+          <div class = "col-md-12 row">
+           <div class = "col-md-1"></div>
+              <div class = "col-md-10" data-aos="fade-up" data-aos-duration="600">
+                <div class = "pageheader"  >
+                   <div class = "imagebreak"></div>
+                    <div class = "imagebreak"></div>
+                     <div class = "imagebreak"></div>
+                      <div class = "imagebreak"></div>
+                       <div class = "imagebreak"></div>
+                  - Reflections -
+                </div>
+                 
+                <p>During my time designing at Blur as a new startup, I learned to combine my business knowledge with design and adapt to this fast-paced environment. Most importantly, I learned how to take on ownership responsibility on tasks I was assigned because I knew how much my decision would affect the team and the company. </p>
+            <p> For future iterations, I would love to explore more on how to make Blur <span class = "inlinetext">more fun and personal </span>  for users. Currently, we focus a lot on matching users together based on their personality. In the future, I would love to focus more on <span class = "inlinetext">building stronger relationship </span> between matches after they connect. To keep users coming back, I would love the possibility to explore community aspect. If we could use AI and Maching Learning to build a community for people with shared personality or interests, then users would be more likely to stay on the app. Furthermore, I would love to explore possibilities of creating <span class = "inlinetext">more fun "deblur" games</span>   other than answering questions. </p>
+
+            <p>Thanks for reading about Blur. If you are interested in the project, I am happy to share more about it.</p>
+          <div class = col-md-1"></div>
+        </div>
+      </div>
+        <div class="col-md-2"></div>
+      </div>
+
+
+    </section>
+
+
+
+    <div class="col-md-12 row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+         
+                <div class = "moreheader " data-aos="fade-up" data-aos-duration="600">
+                  More Projects
+                </div>
+        </div>
+      </div>
+        <div class="col-md-2"></div>
+      </div>
+
+    <section class="content-section" id="portfolio">
+      <div class="col-md-12 row">
+      <div class="col-md-2"></div>
+        <div class="col-md-8">
+      <div class="container-flex" class="wrapper">
+        <!--   <div class="content-section-heading text-center">
+              <h1 class="mb-5 hvr-grow animated fadeInUp delay-1s" style="font-family: Roboto,Helvetica,Arial,sans-serif !important;color: #72767E; margin-top: 10%;"></h1>
+          </div> -->
+          <div class="row no-gutters" id="work-items">
+             
+              <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
+                  <a class="portfolio-item" href="brandeis.html">
+                <span class="caption">
+                  <span class="caption-content animated bounceInUp">
+                    <h2>Brandeis</h2>
+                    <p class="mb-0" style="line-height: 0px;">Protect Mobile Security</p>
+                  </span>
+                </span>
+                      <img class="img-fluid" src="../assets/img/brandeis.gif" style=width:100% alt="Brandeis Project">
+                  </a>
+              </div>
+
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
+                  <a class="portfolio-item" href="">
+                <span class="caption animated bounceInUp">
+                  <span class="caption-content">
+                    <h2>Vuno</h2>
+                    <p class="mb-0">Shop with AR</p>
+                  </span>
+                </span>
+                      <img class="img-fluid" src="../assets/img/vunoicon.gif" alt="Vuno">
+                  </a>
+              </div>
+
+
+               <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
+                  <a class="portfolio-item" href="cortibot.html">
+                <span class="caption">
+                  <span class="caption-content animated bounceInUp">
+                    <h2>CortiBot</h2>
+                    <p class="mb-0">Robot AR Health Tracking</p>
+                  </span>
+                </span>
+                      <img class="img-fluid" src="../assets/img/cortibot.gif" alt="CortiBot">
+                  </a>
+              </div>
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
+                  <a class="portfolio-item" href="cuberover.html">
+                <span class="caption">
+                  <span class="caption-content animated bounceInUp">
+                    <h2>Cube Rover</h2>
+                    <p class="mb-0">Design for Space</p>
+                  </span>
+                </span>
+                      <img class="img-fluid" src="../assets/img/cuberover.gif" style=width:100% alt="Cube Rover">
+                  </a>
+              </div>
+
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
+                  <a class="portfolio-item" href="livenation.html">
+                <span class="caption">
+                  <span class="caption-content animated bounceInUp">
+                    <h2>Live Nation</h2>
+                    <p class="mb-0" style="line-height: 0px;">Interaction Design, User Testing</p>
+                  </span>
+                </span>
+                      <img class="img-fluid" src="../assets/img/livenation.gif" style=width:100% alt="Live Nation">
+                  </a>
+              </div>
+
+
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
+                  <a class="portfolio-item" href="blur.html">
+                <span class="caption">
+                  <span class="caption-content animated bounceInUp">
+                    <h2>Blur</h2>
+                    <p class="mb-0" style="line-height: 0px;">Delay Reveal Social Dating App</p>
+                  </span>
+                </span>
+                      <img class="img-fluid" src="../assets/img/blur.png" style=width:100% alt="Blur Dating">
+                  </a>
+              </div>
+
+  <!--             <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
+                  <a class="portfolio-item" href="">
+                <span class="caption animated bounceInUp">
+                  <span class="caption-content">
+                    <h2>Eeco</h2>
+                    <p class="mb-0">Coming soon</p>
+                  </span>
+                </span>
+                      <img class="img-fluid" src="../assets/img/eeco.gif" alt="Eeco">
+                  </a>
+              </div> -->
+
+
+          </div>
+      </div>
+      </div>
+      <div class="col-md-2"></div>
+      </div>
+    </section>
+
+
+    <!--Footer Section-->
+
     <footer class="footer text-center">
       <div class="container">
 
-        <p class="text-muted small mb-0">Design & Code by &copy; Ally Liu 2018</p>
+        <p class="text-muted small mb-0">Design & Code by &copy; Ally Liu 2019</p>
       </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
+    <!-- JavaScript Files-->
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!--Portfolio-specific Javascript-->
         <script src="../assets/js/aos.js"></script>
+        <script src="../assets/js/brandeis.js"></script>
     <script type = "text/javascript">
       AOS.init(); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+            $('body').addClass('loaded');
+      });
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('#nav').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('#nav').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('#nav').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+  });
+</script>
+<style>.image-link {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in;
+}
+
+/* aligns caption to center */
+.mfp-title {
+  text-align: center;
+  padding: 6px 0;
+}</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+     setTimeout(function(){
+            $('#loader').css("display","none");
+            $('#loaderText').css("display","none");
+            $('#loadScreen').addClass("loadhide");
+            $('#myDiv').css("display","block");
+            $('#introduction').css("display","block");
+        },2000);
+  });
+</script>
+<script type="text/javascript">
+  
+$('.with-caption').magnificPopup({
+    type: 'image',
+    closeBtnInside: false,
+    mainClass: 'mfp-with-zoom mfp-img-mobile',
+  
+    image: {
+      verticalFit: true,
+      titleSrc: function(item) {
+        
+        var caption = item.el.attr('title');
+        
+        var pinItURL = "https://pinterest.com/pin/create/button/";
+        
+        // Refer to https://developers.pinterest.com/pin_it/
+        pinItURL += '?url=' + 'http://dimsemenov.com/plugins/magnific-popup/';
+        pinItURL += '&media=' + item.el.attr('href');
+        pinItURL += '&description=' + caption;
+        
+        
+        return caption;
+      }
+    },
+  
+  
+    gallery: {
+      enabled: true 
+    }, 
+  
+  
+  
+    callbacks: {
+      open: function() {
+      //  this.wrap.on('click.pinhandler', '.pin-it', function(e) {
+          
+          // This part of code doesn't work on CodePen, as it blocks window.open
+          // Uncomment it on your production site, it opens a window via JavaScript, instead of new page
+          /*window.open(e.currentTarget.href, "intent", "scrollbars=yes,resizable=yes,toolbar=no,location=yes,width=550,height=420,left=" + (window.screen ? Math.round(screen.width / 2 - 275) : 50) + ",top=" + 100);
+
+          
+          return false;*/
+        //});
+      },
+      beforeClose: function() {
+       //this.wrap.off('click.pinhandler');
+      }
+    }
+  
+  });
 
 
+
+</script>
   </body>
 
 </html>
