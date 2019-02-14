@@ -108,12 +108,12 @@ ul li a:before{
   z-index: 11;
   position: absolute;
   width: 29%;
-  height: 26%;
-  top: 45%;
+  height: 28%;
+  top: 43%;
   left: 5%;
   right: 0;
   bottom: 0;
-  background-color: #ffe560;
+  background-color: #66beff;
   -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
           transform: scaleX(0);

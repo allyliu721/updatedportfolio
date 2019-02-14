@@ -107,13 +107,13 @@ ul li a:before{
   content: '';
   z-index: 11;
   position: absolute;
-  width: 29%;
-  height: 26%;
-  top: 45%;
-  left: 5%;
+  width: 28%;
+  height: 28%;
+  top: 43%;
+  left: 3.8%;
   right: 0;
   bottom: 0;
-  background-color: #ffe560;
+  background-color: #ff78b0;
   -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
           transform: scaleX(0);
@@ -169,7 +169,8 @@ ul li a:before{
       transform: scaleX(1) !important; }
 
 a {
-  color:#4a4a4a;
+  color:#5a5e65;
+  font-size:19px;
   font-weight:400;
 }
 
