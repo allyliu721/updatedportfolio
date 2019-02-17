@@ -226,9 +226,9 @@ a {
     height: auto;
     width: 100%;
 }
-#flow{
+/*#flow{
   padding-bottom: 27%;
-    margin-top: -54%;
+    margin-top: -58%;
     height: auto;
     padding-top: 18%;
     text-align: center;
@@ -241,7 +241,7 @@ a {
 }
 #flow p{
   margin-bottom:-20px;
-}
+}*/
 #section1{
   margin-top: 5rem;
 }
@@ -799,4 +799,42 @@ p{
 text-align:left;
 margin-top:2rem;
 
+}
+
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 109%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00000095;
+}
+
+.container:hover .overlay {
+  opacity: 0.8;
+}
+
+.overlaytext {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height:1rem;
+}
+
+.covertext{
+  font-size:15px;
+  padding-top:1rem;
 }

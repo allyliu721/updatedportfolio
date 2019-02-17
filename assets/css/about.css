@@ -16,11 +16,13 @@ html {
 p{
   padding-bottom:3px;
   padding-top:3px;
-  color:#ededed;
+/*  color:#ededed;*/
+  color:#4f4e4e;
 }
 
 h2{
-  color:#ededed !important;
+/*  color:#ededed !important;*/
+    color:#4f4e4e;
 }
 
 a {
@@ -46,8 +48,8 @@ a:hover, a:focus, a:active {
   height:100%;
  /* background:linear-gradient(45deg, #e91e63, #ff9800);*/
  /*background:linear-gradient(45deg, #FEB000, #FFEF6F);*/
-/* background:linear-gradient(45deg, #67adf9, #FFEF6F);*/
- background:linear-gradient(45deg, #000000, #3a3a3a);
+ background:linear-gradient(45deg, #67adf9, #FFEF6F);
+/* background:linear-gradient(45deg, #000000, #3a3a3a);*/
 
 }
 
@@ -66,7 +68,8 @@ ul li {
 
 ul li a {
   text-decoration: none !important;
-  color: #dfdfdf;
+/*  color: #dfdfdf;*/
+  color: #4f4e4e;
   font-size: 14.5px;
   font-weight: 600;
   display: block;
@@ -74,7 +77,7 @@ ul li a {
   position: relative;
 }
 ul li a:hover {
-  color: #72767E;
+  color: #4f4e4e;
   
 }
  ul li a:hover:after {
@@ -197,7 +200,8 @@ ul li a:before{
       transform: scaleX(1) !important; }
 
 a {
-  color:#ebebeb !important;
+/*  color:#ebebeb !important*/
+  color: #5d5d5d !important;
 }
 .nav-up {
     top: -50px !important;
@@ -494,3 +498,15 @@ input:checked {
   }
 }
 
+.contactme{
+   color: #6f6fff !important;
+}
+
+.contactme:hover {
+/*  background-color: #79e0ff*/;
+  color:#dff526 !important;
+/*  border:5px ;*/
+  font-weight:500;
+  padding-left:6px;
+  padding-top:3px;
+}

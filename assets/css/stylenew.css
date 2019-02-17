@@ -4,14 +4,15 @@
 }
 
 body {
-	height:95vh;
+	height:100vh;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	font-family: 'Lato', sans-serif;
 /*	background-color:#6fa2f7;*/
-  background-color: #252525;
+/*  background-color: #252525;*/
+  background:linear-gradient(45deg,#1270e5, #1de3f7);
 	font-weight:600;
   margin-left:15%;
   margin-right:18%;
