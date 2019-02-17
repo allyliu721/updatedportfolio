@@ -145,7 +145,9 @@ ul li a:before{
 }
 
 .content-section-heading h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-top:1.5rem;
+  color:#64686e;
 }
 
 .content-section-heading h3 {
@@ -522,7 +524,7 @@ a:hover, a:focus, a:active {
   /*border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #fff900;*/
-  background-image: url("../img/loader.gif");
+  background-image: url("../img/loader1.gif");
   background-size: 100% 100%;
   width: 78px;
   height: 78px;
@@ -549,8 +551,10 @@ a:hover, a:focus, a:active {
   position: absolute;
   width: 100%;
   text-align: center;
-  top: calc(45% + 70px);
+  top: calc(46% + 40px);
   left:1%;
+  font-size:0.9rem;
+  color:#64686e;
 }
 
 
@@ -724,12 +728,12 @@ img {
 }
 
 #work-items{
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 #work-items .aos-animate{
-  padding: 2%;
+  padding: 3%;
 }
 #about{
   padding-top: 10.5rem !important;
