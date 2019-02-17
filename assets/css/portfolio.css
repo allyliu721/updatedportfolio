@@ -446,6 +446,13 @@ h6 {
 footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  position:relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: none;
+   color: white;
+   text-align: center;
 }
 
 
@@ -809,3 +816,123 @@ img {
     max-width: 48%
 }
 }
+
+
+
+DarkMan
+9 months ago
+::::::::::::::::HTML:::::::::::::
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Dark and Light</title>
+ <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+ <section>
+  <h1>What is Lorem ipsum ?</h1>
+  <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+  <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+  <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+ </section>
+  <ul>
+   <li>
+    <span>Dark</span>
+    <span>Light</span>
+   </li>
+  </ul>
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ <script type="text/javascript">
+  $(document).ready(function(){
+   $('ul').click(function(){
+    $('ul').toggleClass('active')
+    $('section').toggleClass('dark')
+   })
+  })
+ </script>
+</body>
+</html>
+
+
+
+
+
+:::::::::::::::Toggle::::::::::::::::
+
+
+
+section{
+ position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ box-sizing:border-box;
+ padding:100px;
+ transition:0.5s;
+}
+
+section.dark{
+ background:#262626;
+ color:#fff;
+}
+
+.dark .h2{
+  color:white;
+}
+
+
+h2.active{
+  color:white;
+}
+
+p.active{
+  color:white;
+}
+
+ul.toggleul{
+ position:absolute;
+ top:12px;
+ right:3.8rem;
+ margin:0;
+ padding:0;
+ width:70px;
+ height:30px;
+ z-index:1;
+ border-radius:4px;
+ cursor:pointer;
+ overflow:hidden;
+}
+
+ul.toggleul.active{
+ border-color:#fff;
+}
+
+ul.toggleul li{
+ list-style:none;
+ width:100%;
+ height:60px;
+ text-align:center;
+ transition:0.5s;
+}
+
+ul.toggleul.active li{
+ transform:translateY(-30px);
+}
+
+ul.toggleul li span{
+ display:block;
+ width:100%;
+ height:30px;
+ line-height:30px;
+ color:#262626;
+ background:#fff;
+}
+
+ul.toggleul li span:nth-child(1){
+ background:#ffffff00;
+ color:#fff;
+}﻿

@@ -39,6 +39,8 @@
 
 <!-- Top Navigation -->
 
+<section>
+
 <div class="row nav-down" style="width: 100%;" id="nav">
     <div class="col-md-1" style="padding-left: 0px;padding-right: 0px;"></div>
 
@@ -58,12 +60,21 @@
             <li><a href="https://drive.google.com/file/d/14xNjcYsXJIy4MJ2v-4cgHmiyIlSiGBnT/view?usp=sharing"
                    target="_blank">Resume</a></li>
         </ul>
+
+
+
     </div> 
-    <div class="col-md-1" style="padding-left: 0px;padding-right: 0px;"></div>
+   <!--  <div class="col-md-1" style="padding-left: 0px;padding-right: 0px;">
+        <ul class = "toggleul">
+   <li>
+    <span>💡</span>
+    <span>✨</span>
+   </li>
+    </div> -->
 
 
 </div>
-
+</section>
 
 
 <!-- About -->
@@ -196,24 +207,39 @@
             </div> -->
 
 
+            
+
+
         </div>
+         <p style = "text-align:center; margin-top:5%" class="text-muted small mb-0">Design & Code by &copy; Ally Liu 2019</p>
     </div>
+
 
 </section>
 
 
 <!-- Footer -->
-<footer class="footer text-center">
+<!-- <footer class="footer text-center">
     <div class="container">
 
         <p class="text-muted small mb-0">Design & Code by &copy; Ally Liu 2019</p>
     </div>
-</footer>
+</footer> -->
 
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
     <i class="fas fa-angle-up"></i>
 </a>
+
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ <script type="text/javascript">
+  $(document).ready(function(){
+   $('ul').click(function(){
+    $('ul').toggleClass('active')
+    $('section').toggleClass('dark')
+   })
+  })
+ </script>
 
 
 <script src="../assets/vendor/jquery/jquery.min.js"></script>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang = "en">
+<head>
+	<title>Ally | About Me </title>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+	<link href="../assets/css/about.css" rel="stylesheet">
+	<link href="../assets/css/animate.css" rel="stylesheet">
+	<link href="../assets/css/hover.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+
+
+</head>
+<body>
+
+<!--Page Content -->
+
+<div class="toggleWrapper">
+  <input type="checkbox" class="dn" id="dn"/>
+  <label for="dn" class="toggle">
+    <span class="toggle__handler">
+      <span class="crater crater--1"></span>
+      <span class="crater crater--2"></span>
+      <span class="crater crater--3"></span>
+    </span>
+    <span class="star star--1"></span>
+    <span class="star star--2"></span>
+    <span class="star star--3"></span>
+    <span class="star star--4"></span>
+    <span class="star star--5"></span>
+    <span class="star star--6"></span>
+  </label>
+</div>
+
+	<div id = "particles-js"></div> 
+
+	<div class="container-fluid" id="content">
+	
+
+	<div class="row nav-down" id="nav">
+    <div class="col-md-1"></div>
+
+
+    <div class="col-md-2  col-xs-2 col-2 float left">
+        <a href="portfolio.html" class="expand" style=" padding-top:18px;display:inline-block;color: #72767E;font-weight:bold;font-size:16px;">ALLY LIU<!-- <img src="../assets/img/ally.png"
+                                                       style="float:left; width: 90px; height: 45px; "> --></a>
+
+    </div>
+
+    <div class="col-md-5"></div>
+    <div class="col-md-3 col-xs-8 col-8">
+        <ul class="" style="padding-top: 1.5%;padding-bottom: 1.5%;">
+            <li><a href="index.html">Home </a></li>
+            <li><a href="portfolio.html" >Work </a></li>
+            <li><a href="about.html" id="work" style="border-bottom: 2px solid #72767E;width:100%;padding-left:0px;padding-bottom: 0px !important;">About</a></li>
+            <li><a href="https://drive.google.com/file/d/14xNjcYsXJIy4MJ2v-4cgHmiyIlSiGBnT/view?usp=sharing"
+                   target="_blank">Resume</a></li>
+        </ul>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+
+
+<!-- About Me Content -->
+
+		<div class="row" style="height: 10%">
+			
+		</div>
+		<div class="row" style="height: 60%">
+			<div class="col-md-2">
+
+			</div>
+			<div class="col-md-4 row">
+				<div class="col-md-9 animated fadeInLeft">
+					<img class = "hvr-grow2" src="../assets/img/allyphoto.png" style="width: 110%; margin-left:-5%">
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+				<div class="col-md-4 animated fadeInRight" style="color: #494949; padding-top:4rem; font-size:15px">
+					<div class = ""><h2>Hello there!</h2></div>
+					<p>My name is Ally. I am an interaction designer and a Master of Human Computer Interaction (MHCI) candidate at Carnegie Mellon University Class of 2019. </p>
+
+					<p>I am passionate about food🍕, travel🏝, and new technologies.💡 I am a life-time learner who is always excited to explore unknowns. I am strong at creating visually-appealing designs, but I am also familiar with implementing design using front-end technologies such as HTML, CSS, JavaScript and Bootstrap. As a Designer who comes from Economics and Mathematics background, I am good at tackling questions in a logical way,  thinking from the business perspective, and proving solutions with valid data results. </p>
+
+					<p>If you are interested in learning more about me and my work, I am always happy to chat!</p><a href="mailto:yingliu3@andrew.cmu.edu?" target="_top">yingliu3@andrew.cmu.edu</a>
+
+					<!-- <div class = "links">
+					 <p><a href="https://drive.google.com/file/d/1_FbykulEmY7DVFXXd3j-40oeya6c9qxC/view?usp=sharing" target="_blank">Download Resume</a></p>
+					</div> -->
+
+					
+				</div>
+			<div class="col-md-2>
+
+			</div>
+		</div>
+		<div class="row" style="height: 15%"></div>
+	</div>
+
+<!-- Javascript Files -->
+<script src="../assets/js/about.js"></script>
+<script src="../assets/js/particles.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('#nav').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('#nav').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('#nav').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+  });
+</script>
+
+
+
+
+
+</body>
+</html>
+
