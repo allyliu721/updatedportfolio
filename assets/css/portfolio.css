@@ -65,7 +65,7 @@ body {
 }
 p{
   padding-bottom:5px;
-  padding-top:20px;
+  padding-top:16px;
 }
 
 ul {
@@ -359,7 +359,7 @@ h6 {
   display: block;
   position: relative;
   overflow: hidden;
-  border-radius: 18px;
+  border-radius:5px;
   max-width: 530px;
   margin: auto auto 1rem;
 }
@@ -394,7 +394,7 @@ h6 {
 
 .portfolio-item .caption .caption-content p {
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: 5%;
   color:#444444 !important;
 }
@@ -412,9 +412,9 @@ h6 {
   .portfolio-item .caption .caption-content {
     -webkit-transition: opacity 0.25s;
     transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 2.5rem;
+    margin-left: 3.9rem;
+    margin-right: 3.9rem;
+    margin-bottom: 2,8rem;
     line-height:0.5;
   }
   .portfolio-item img {
@@ -431,7 +431,7 @@ h6 {
    #work-items .portfolio-item:hover {
     box-shadow: 0 4px 8px rgba(1,1,1,1);
     transform: scale(1.03);
-    border-radius: 30px;
+    border-radius: 10px;
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
@@ -439,7 +439,7 @@ h6 {
   }
   .portfolio-item:hover .caption {
     background-color: rgba(255, 255, 255, 0.9);
-   border-radius: 25px;
+   border-radius: 12px;
   }
 
 }
@@ -728,8 +728,8 @@ img {
 }
 
 #work-items{
-  margin-left: 7%;
-  margin-right: 7%;
+  margin-left: 9%;
+  margin-right: 9%;
 }
 
 #work-items .aos-animate{
