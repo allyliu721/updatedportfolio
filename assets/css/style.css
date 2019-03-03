@@ -14,8 +14,8 @@ body {
   font-weight:600;
   margin-left:16%;
   margin-right:20%;
-/*  background-color: #252525;*/
-  background:linear-gradient(45deg,#1270e5, #1de3f7);
+  background-color: #252525;
+  /*background:linear-gradient(45deg,#1270e5, #1de3f7);*/
 }
 
 
