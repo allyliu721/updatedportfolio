@@ -23,6 +23,8 @@ pre {
     color: #545556;
     margin-top:3rem;
 }
+
+/*Top Navigation Animation*/
 ul {
   padding: 0;
   margin: 0;
@@ -90,6 +92,8 @@ ul li a:before{
 #work:after{
   display: none;
 }
+
+/* Top Name Link Animation*/
 #nav{
   margin-left: 0px !important;
   margin-right: 0px !important;
@@ -173,6 +177,9 @@ a {
   font-weight:400;
 }
 
+
+/*Side Navigation*/
+
 .sidenav {
     height: 100%;
     width: 180px;
@@ -226,22 +233,7 @@ a {
     height: auto;
     width: 100%;
 }
-/*#flow{
-  padding-bottom: 20%;
-    margin-top: -43.8%;
-    height: auto;
-    padding-top: 13.2%;
-    text-align: center;
-    color: white;
-    background: rgba(0,0,0,0.6);
-}
-#flow .col-md-4{
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-#flow p{
-  margin-bottom:-20px;
-}*/
+
 #section1{
   margin-top: 5rem;
 }
@@ -442,17 +434,13 @@ a {
   width: 40px;
   height: 40px;
   margin: -75px 0 0 -50px;
-  /*border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #fff900;*/
+
   background-image: url("./assets/img/loader1.gif");
   background-size: 90% 90%;
   width: 40px;
   height: 40px;
   transform-origin: center center;
-/*  -webkit-transform-origin: center center;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;*/
+
 }
 
 #loadScreen{
@@ -474,37 +462,7 @@ a {
   text-align: center;
   top: calc(40% + 0px);
 }
-/*
 
-.loaded #loader-wrapper .loader-section.section-left{
-  -webkit-transform:translateX(-100%);
-  -ms-transform:translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-transition:all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-  transition: all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-    -ms-transition: all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-} 
-.loaded #loader-wrapper .loader-section.section-right{
-  -webkit-transform:translateX(100%);
-  -ms-transform:translateX(100%);
-  transform: translateX(100%);
-  
-    -webkit-transition:all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-  transition: all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-    -ms-transition: all 0.5s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
-}
-.loaded #loader{
-  opacity: 1;
-}
-
-.loaded #loader-wrapper{
-  -webkit-transform: translateY(-100%);
-            -ms-transform: translateY(-100%);
-                transform: translateY(-100%);
- 
-        -webkit-transition: all 0.3s 1s ease-out; 
-                transition: all 0.3s 1s ease-out;
-}*/
 #firstsec{
   margin-top: 2%;
 }

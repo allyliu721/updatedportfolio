@@ -23,6 +23,8 @@ pre {
     color: #545556;
     margin-top:3rem;
 }
+
+/*Top Navigation Animation*/
 ul {
   padding: 0;
   margin: 0;
@@ -90,6 +92,8 @@ ul li a:before{
 #work:after{
   display: none;
 }
+
+/* Name Link Animation*/
 #nav{
   margin-left: 0px !important;
   margin-right: 0px !important;
@@ -168,6 +172,8 @@ ul li a:before{
   -ms-transform: scaleX(1) !important;
       transform: scaleX(1) !important; }
 
+
+/* Side Navigation*/
 a {
   color:#4a4a4a;
   font-weight:400;
