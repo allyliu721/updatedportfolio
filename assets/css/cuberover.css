@@ -273,8 +273,13 @@ a {
   width: 100%;
 }
 #digit{
-  color: #66a3da;
-  font-size: 40px;
+  color: lightgrey;
+  font-size: 19px;
+  font-weight: bold;
+}
+#demotitle{
+  color: #545252;
+  font-size: 25px;
   font-weight: bold;
 }
 .text{

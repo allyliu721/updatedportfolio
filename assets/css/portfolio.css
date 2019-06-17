@@ -19,36 +19,7 @@
     z-index: 9;
     background-color: white;
 }
-.expand:hover:after {
-  content: '';
-  z-index: 11;
-  position: absolute;
-  width: 27%;
-  height: 26%;
-  top: 45%;
-  left: 0%;
-  right: 0;
-  bottom: 0;
-  background-color: #ffe560;
-  -webkit-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-      -ms-transform-origin: 0 50%;
-          transform-origin: 0 50%;
-  pointer-events: none;
-  -webkit-animation-name: text-reveal;
-          animation-name: text-reveal;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-          animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+
 
 /* Body Style */
 
