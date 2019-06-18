@@ -107,7 +107,7 @@ ul li a:before{
     z-index: 9;
     background-color: white;
 }
-.expand:hover:after {
+/*.expand:hover:after {
   content: '';
   z-index: 11;
   position: absolute;
@@ -170,7 +170,7 @@ ul li a:before{
   visibility: visible !important;
   -webkit-transform: scaleX(1) !important;
   -ms-transform: scaleX(1) !important;
-      transform: scaleX(1) !important; }
+      transform: scaleX(1) !important; }*/
 
 a {
   color:#4a4a4a;
